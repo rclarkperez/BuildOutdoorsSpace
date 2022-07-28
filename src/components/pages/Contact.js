@@ -2,7 +2,7 @@ import Dropdown from "../Dropdown";
 import States from "../objects/States";
 import telephoneCheck from "../functions/TelephoneValidator";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios, { Axios } from "axios";
 
 
 const options = [
@@ -83,13 +83,34 @@ const Contact = ({ loaderToggle }) => {
 
         window.navigator.geolocation.getCurrentPosition(success, error)
     }
+
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+      }
     
+    const onSubmit = (e) => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", values })
+          })
+            .then(() => console.log('success'))
+           
+    
+          e.preventDefault();
+    }
+
     useEffect(()=> {
         geoLocation()
     }, []);
 
     return (
-        <form className='ui form submit segment' >
+        <form 
+        className='ui form submit segment' 
+        onSubmit={onSubmit}
+        >
             <h2 className="ui center aligned container">Contact Us</h2>
             
             <div className="ui field segment required">
@@ -153,7 +174,11 @@ const Contact = ({ loaderToggle }) => {
                 ></textarea>
             </div>
             <div>
-                <button disabled={!telephoneCheck(values.phone)} className="ui submit button primary">Submit</button>
+                <button 
+                disabled={!telephoneCheck(values.phone)} 
+                className="ui submit button primary"
+                >Submit
+                </button>
             </div>
         </form>
 
