@@ -1,0 +1,35 @@
+#labelHeader {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+}
+#title {
+    margin-top: 1%;
+}
+#hamburger {
+    margin-top: 4.5vh;
+}
+#pages {
+    margin-left: 3%;
+}
+
+
+@media (max-width:700px) {
+    #header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #Link {
+        flex-basis: 100%;
+    }
+    #title {
+        margin-left: 1vh;
+    }
+
+    #menu-icon {
+       margin-left: 5vh;
+       margin-bottom: 3vh;
+    }
+   
+}
+
+   
