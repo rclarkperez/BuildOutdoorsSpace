@@ -16,15 +16,47 @@ const options = [
 
 
 const Contact = ({ loaderToggle }) => {
-    const geoStateSelected  ='Select a State';
     const [previousSelected, previousSetSelection] =useState('Yes');
-    const [stateSelected, stateSetSelection] =useState(geoStateSelected);
+    const [stateSelected, stateSetSelection] =useState('Select a State');
     const [geoCity, cityAssign] =useState('');
-    const [inputValue, setValue] =useState('');
+    const [values, setValues] = useState({
+        name: '',
+        email: '',
+        message: '',
+        phone: ''
+    });
 
-    const onChange = (e) => {
-        setValue(e.target.value);
+    const onPhoneChange = (e) => {
+        setValues(values =>({
+            ...values,
+            phone: e.target.value
+        })
+            );
     };
+
+    const onNameChange = (e) => {
+        setValues(values =>({
+            ...values,
+            name: e.target.value
+        })
+            );
+    };
+    const onEmailChange = (e) => {
+        setValues(values =>({
+            ...values,
+            email: e.target.value
+        })
+            );
+    };
+
+    const onMessageChange = (e) => {
+        setValues(values =>({
+            ...values,
+            message: e.target.value
+        })
+            );
+    };
+ 
 
     const errorMessage = 'ERROR: You must use a valid phone number'
     
@@ -62,23 +94,30 @@ const Contact = ({ loaderToggle }) => {
             
             <div className="ui field segment required">
                 <label>Name</label>
-                <input placeholder={'John Jackson'}></input>
+                <input 
+                value={values.name} 
+                placeholder={'John Jackson'}
+                onChange={onNameChange}
+                ></input>
             </div>
             <div className="ui field segment required">
                 <label >Email</label>
-                <input  placeholder={'email@email.org'}></input>
+                <input value={values.email} 
+                placeholder={'email@email.org'}
+                onChange={onEmailChange}
+                ></input>
             </div>
-            <div className={`ui field segment required ${inputValue.length ===0 || telephoneCheck(inputValue) ? '' :'error'}`}>
+            <div className={`ui field segment required ${values.phone.length ===0 || telephoneCheck(values.phone) ? '' :'error'}`}>
                 <label>Phone</label>
                 <input 
                     className="ui input"
-                     placeholder={'555-555-5555'}
-                    value={inputValue}
-                    onChange={onChange}
+                    placeholder={'555-555-5555'}
+                    value={values.phone}
+                    onChange={onPhoneChange}
                     />
-                <div className="ui field error">
-                    {`${inputValue.length ===0 || telephoneCheck(inputValue)? '' : errorMessage}`}
-                </div>
+                <span className="ui field error">
+                    {`${values.phone.length ===0 || telephoneCheck(values.phone)? '' : errorMessage}`}
+                </span>
             </div>
            
             <div className="ui field segment">
@@ -87,7 +126,7 @@ const Contact = ({ loaderToggle }) => {
             </div>
             <div className="ui field segment">
                 <Dropdown 
-                geoState= {geoStateSelected}
+                geoState= {'Select a State'}
                 options={States}
                 labelString={'State'}
                 selected={stateSelected}
@@ -107,12 +146,17 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field segment">
                 <label>Please Describe your Case:</label>
-                <textarea placeholder={'It all started...'}></textarea>
+                <textarea 
+                 value={values.message} 
+                 onChange={onMessageChange} 
+                placeholder={'It all started...'}
+                ></textarea>
             </div>
             <div>
-                <button disabled={!telephoneCheck(inputValue)} className="ui submit button primary">Submit</button>
+                <button disabled={!telephoneCheck(values.phone)} className="ui submit button primary">Submit</button>
             </div>
         </form>
+
     );
 };
 

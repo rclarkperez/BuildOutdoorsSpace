@@ -9,6 +9,7 @@ import NotFound from "./components/pages/PageNotFound";
 import Guardianships from "./components/pages/Guardianships";
 import Probates from "./components/pages/Probates";
 import Footer from "./components/Footer";
+import Submission from "./components/pages/Submission";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import history from "./history";
 
@@ -33,6 +34,8 @@ const App = () => {
                         <Route exact path='/contact' exact element={<Contact loaderToggle={loaderToggle}/>}/>
                         <Route exact path='/guardianships' exact element={<Guardianships/>}/>
                         <Route exact path='/probates' exact element={<Probates/>}/>
+                        <Route exact path='/*' exact element={<NotFound/>}/>
+                        <Route exact path='/submission' exact element={<Submission/>}/>
                         <Route exact path='/*' exact element={<NotFound/>}/>
                     </Routes>
                
