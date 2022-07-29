@@ -24,8 +24,8 @@ const Contact = ({ loaderToggle }) => {
         name: '',
         email: '',
         phone: '',
-        city: geoCity,
-        state: stateSelected,
+        City: '',
+        state: '',
         previousSelected: 'Yes',
         message: ''
 
@@ -79,7 +79,13 @@ const Contact = ({ loaderToggle }) => {
                 const state =  response.data.principalSubdivision
                 const city = response.data.city
                 cityAssign(city)
+                setValues(values =>({
+                    ...values,
+                    City: state}))
                 stateSetSelection(state)
+                setValues(values =>({
+                    ...values,
+                    state: state}))
                 loaderToggle(false)
 
         });
