@@ -114,6 +114,7 @@ const Contact = ({ loaderToggle }) => {
             <div className="ui field segment required">
                 <label>Name</label>
                 <input 
+                name="name"
                 value={values.name} 
                 placeholder={'John Jackson'}
                 onChange={onNameChange}
@@ -122,6 +123,7 @@ const Contact = ({ loaderToggle }) => {
             <div className="ui field segment required">
                 <label >Email</label>
                 <input value={values.email} 
+                name="email"
                 placeholder={'email@email.org'}
                 onChange={onEmailChange}
                 ></input>
@@ -131,6 +133,7 @@ const Contact = ({ loaderToggle }) => {
                 <input 
                     className="ui input"
                     placeholder={'555-555-5555'}
+                    name="phone"
                     value={values.phone}
                     onChange={onPhoneChange}
                     />
@@ -141,7 +144,8 @@ const Contact = ({ loaderToggle }) => {
            
             <div className="ui field segment">
                 <label>City</label>
-                <input placeholder={' Seattle'} 
+                <input 
+                placeholder={' Seattle'} 
                 value={geoCity} 
                 onChange={(event) => cityAssign(event.target.value)}
                 name="City"
@@ -155,7 +159,6 @@ const Contact = ({ loaderToggle }) => {
                 selected={stateSelected}
                 setSelection={stateSetSelection}
                 type={'selection'}
-                name="State"
                 />
             </div>
             <div className="ui field segment">
@@ -165,7 +168,6 @@ const Contact = ({ loaderToggle }) => {
                 selected={previousSelected}
                 setSelection={previousSetSelection}
                 type={'selection'}
-                name="Are you a new client?"
                 />
             </div>
 
@@ -173,6 +175,7 @@ const Contact = ({ loaderToggle }) => {
                 <label>Please Describe your Case:</label>
                 <textarea 
                  value={values.message} 
+                 name="message"
                  onChange={onMessageChange} 
                 placeholder={'It all started...'}
                 ></textarea>
