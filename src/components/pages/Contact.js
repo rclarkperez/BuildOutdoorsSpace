@@ -89,7 +89,6 @@ const Contact = ({ loaderToggle }) => {
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
       }
-    const stateObj = {...values, geoCity, stateSelected, previousSelected }
     const onSubmit = (e) => {
         fetch("/", {
             method: "POST",
