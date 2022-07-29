@@ -186,7 +186,7 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field segment">
                 <Dropdown 
-                name="Are you a new Client?"
+                name="Are you a new Clientz?"
                 options={options}
                 labelString={'Are you a new client?'}
                 selected={previousSelected}
