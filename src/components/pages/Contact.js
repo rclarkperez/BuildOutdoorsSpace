@@ -14,7 +14,8 @@ const options = [
     }
 ];
 
-
+///destructure all values in 
+//be key value pairs and fix throughout out, then form submission will work 
 const Contact = ({ loaderToggle }) => {
     const [previousSelected, previousSetSelection] =useState('Yes');
     const [stateSelected, stateSetSelection] =useState('Select a State');
@@ -107,9 +108,13 @@ const Contact = ({ loaderToggle }) => {
         <form 
         className='ui form submit segment' 
         onSubmit={onSubmit}
+        name='contact'
+        method="POST"
+        data-netlify='true'
         >
+            <input type='hidden' name='form-name' value='contact'></input>
             <h2 className="ui center aligned container">Contact Us</h2>
-            
+
             <div className="ui field segment required">
                 <label>Name</label>
                 <input 
@@ -119,6 +124,7 @@ const Contact = ({ loaderToggle }) => {
                 onChange={onNameChange}
                 ></input>
             </div>
+
             <div className="ui field segment required">
                 <label >Email</label>
                 <input value={values.email} 
@@ -127,6 +133,7 @@ const Contact = ({ loaderToggle }) => {
                 onChange={onEmailChange}
                 ></input>
             </div>
+
             <div className={`ui field segment required ${values.phone.length ===0 || telephoneCheck(values.phone) ? '' :'error'}`}>
                 <label>Phone</label>
                 <input 
@@ -150,6 +157,7 @@ const Contact = ({ loaderToggle }) => {
                 name="City"
                 ></input>
             </div>
+
             <div className="ui field segment">
                 <Dropdown 
                 geoState= {'Select a State'}
@@ -160,6 +168,7 @@ const Contact = ({ loaderToggle }) => {
                 type={'selection'}
                 />
             </div>
+
             <div className="ui field segment">
                 <Dropdown 
                 options={options}
@@ -179,6 +188,7 @@ const Contact = ({ loaderToggle }) => {
                 placeholder={'It all started...'}
                 ></textarea>
             </div>
+
             <div>
                 <button 
                 disabled={!telephoneCheck(values.phone)} 
