@@ -95,10 +95,10 @@ const Contact = ({ loaderToggle }) => {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...values })
-            }).then(() => console.log('success'))
+            }).then(() => alert('Your message has been sent!'))
            
-          e.preventDefault();
     }
+    
 
     useEffect(()=> {
         geoLocation()
@@ -108,8 +108,6 @@ const Contact = ({ loaderToggle }) => {
         <form 
         className='ui form submit segment' 
         onSubmit={onSubmit}
-        name='contact'
-        method="POST"
         data-netlify='true'
         >
             <input type='hidden' name='form-name' value='contact'></input>
