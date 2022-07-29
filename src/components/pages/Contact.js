@@ -81,7 +81,7 @@ const Contact = ({ loaderToggle }) => {
                 cityAssign(city)
                 setValues(values =>({
                     ...values,
-                    City: state}))
+                    City: city}))
                 stateSetSelection(state)
                 setValues(values =>({
                     ...values,
@@ -179,6 +179,7 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field segment">
                 <Dropdown 
+                name="state"
                 options={options}
                 labelString={'Are you a new client?'}
                 selected={previousSelected}
