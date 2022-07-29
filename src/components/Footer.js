@@ -30,9 +30,9 @@ const Footer = () => {
                 <h5>Email:</h5> <p>wewillfightforyou@email.com</p>
             </div>
             <div className="ui center aligned container">
-                <a href="privacypolicy"className='item'>Privacy Policy</a>
+                <a href="#/privacypolicy" className='item'>Privacy Policy</a>
                 ||
-                <a className='item' href='disclaimer'>Disclaimer</a>
+                <a className='item' href='disclaimer' >Disclaimer</a>
                 <br/>
                 <br/>
 
