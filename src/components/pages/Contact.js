@@ -24,7 +24,7 @@ const Contact = ({ loaderToggle }) => {
         name: '',
         email: '',
         message: '',
-        phone: ''
+        phone: '555-555-5555'
     });
 
     const onPhoneChange = (e) => {
