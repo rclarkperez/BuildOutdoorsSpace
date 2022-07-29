@@ -89,13 +89,12 @@ const Contact = ({ loaderToggle }) => {
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
       }
-    
+    const stateObj = {...values, geoCity, stateSelected, previousSelected }
     const onSubmit = (e) => {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", 
-            ...values, geoCity, stateSelected, previousSelected })
+            body: encode({ "form-name": "contact", ...stateObj })
             }).then(() => console.log('success'))
            
           e.preventDefault();
