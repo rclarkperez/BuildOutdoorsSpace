@@ -25,7 +25,7 @@ const Contact = ({ loaderToggle }) => {
         email: '',
         phone: '',
         City: '',
-        state: '',
+        state: 'placeholder',
         previousSelected: 'Yes',
         message: ''
 
