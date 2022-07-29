@@ -2,7 +2,7 @@ import Dropdown from "../Dropdown";
 import States from "../objects/States";
 import telephoneCheck from "../functions/TelephoneValidator";
 import React, { useState, useEffect } from "react";
-import axios, { Axios } from "axios";
+import axios from "axios";
 
 
 const options = [
@@ -19,18 +19,24 @@ const options = [
 const Contact = ({ loaderToggle }) => {
     const [previousSelected, previousSetSelection] =useState('Yes');
     const [stateSelected, stateSetSelection] =useState('Select a State');
-    const [geoCity, cityAssign] =useState('');
     const [values, setValues] = useState({
         name: '',
         email: '',
         phone: '',
         City: '',
-        state: 'placeholder',
+        state: '',
         previousSelected: 'Yes',
         message: ''
 
     });
 
+    const onCityChange = (e) => {
+        setValues(values =>({
+            ...values,
+            City: e.target.value
+        })
+            );
+    };
     const onPhoneChange = (e) => {
         setValues(values =>({
             ...values,
@@ -78,7 +84,6 @@ const Contact = ({ loaderToggle }) => {
             await axios.get(baseURL).then((response)=> {
                 const state =  response.data.principalSubdivision
                 const city = response.data.city
-                cityAssign(city)
                 setValues(values =>({
                     ...values,
                     City: city}))
@@ -105,7 +110,7 @@ const Contact = ({ loaderToggle }) => {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...values })
-            }).then(() => alert('Your message has been sent!'))
+            })
            
     }
     
@@ -113,12 +118,13 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-    console.log(stateSelected, values.state, geoCity, values.City);
+    console.log(stateSelected, values.state, values.City);
     return (
         <form 
         className='ui form submit segment' 
         onSubmit={onSubmit}
         data-netlify='true'
+        action="/submission"
         >
             <input type='hidden' name='form-name' value='contact'></input>
             <h2 className="ui center aligned container">Contact Us</h2>
@@ -160,8 +166,8 @@ const Contact = ({ loaderToggle }) => {
                 <label>City</label>
                 <input 
                 placeholder={' Seattle'} 
-                value={geoCity} 
-                onChange={(event) => cityAssign(event.target.value)}
+                value={values.City} 
+                onChange={onCityChange}
                 name="City"
                 ></input>
             </div>
