@@ -23,8 +23,12 @@ const Contact = ({ loaderToggle }) => {
     const [values, setValues] = useState({
         name: '',
         email: '',
-        message: '',
-        phone: '555-555-5555'
+        phone: '',
+        city: geoCity,
+        state: stateSelected,
+        previousSelected: 'Yes',
+        message: ''
+
     });
 
     const onPhoneChange = (e) => {
@@ -103,7 +107,7 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-
+    console.log(stateSelected, values.state, geoCity, values.city);
     return (
         <form 
         className='ui form submit segment' 
