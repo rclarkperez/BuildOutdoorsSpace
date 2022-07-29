@@ -95,7 +95,7 @@ const Contact = ({ loaderToggle }) => {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", 
-            ...values, geoCity, stateSelected })
+            ...values, geoCity, stateSelected, previousSelected })
             }).then(() => console.log('success'))
            
           e.preventDefault();
@@ -142,7 +142,11 @@ const Contact = ({ loaderToggle }) => {
            
             <div className="ui field segment">
                 <label>City</label>
-                <input placeholder={' Seattle'} value={geoCity} onChange={(event) => cityAssign(event.target.value)}></input>
+                <input placeholder={' Seattle'} 
+                value={geoCity} 
+                onChange={(event) => cityAssign(event.target.value)}
+                name="City"
+                ></input>
             </div>
             <div className="ui field segment">
                 <Dropdown 
@@ -152,6 +156,7 @@ const Contact = ({ loaderToggle }) => {
                 selected={stateSelected}
                 setSelection={stateSetSelection}
                 type={'selection'}
+                name="State"
                 />
             </div>
             <div className="ui field segment">
@@ -161,6 +166,7 @@ const Contact = ({ loaderToggle }) => {
                 selected={previousSelected}
                 setSelection={previousSetSelection}
                 type={'selection'}
+                name="Are you a new client?"
                 />
             </div>
 
