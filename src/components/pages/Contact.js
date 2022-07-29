@@ -94,7 +94,7 @@ const Contact = ({ loaderToggle }) => {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", values })
+            body: encode({ "form-name": "contact", ...values })
           })
             .then(() => console.log('success'))
            
