@@ -97,7 +97,7 @@ const Contact = ({ loaderToggle }) => {
             body: encode({ "form-name": "contact", ...values })
             }).then(() => console.log('success'))
            
-    
+          e.preventDefault();
     }
 
     useEffect(()=> {
