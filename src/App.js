@@ -10,7 +10,7 @@ import Guardianships from "./components/pages/Guardianships";
 import Probates from "./components/pages/Probates";
 import Footer from "./components/Footer";
 import Submission from "./components/pages/Submission";
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import history from "./history";
 
 
@@ -23,7 +23,7 @@ const App = () => {
                         <div style={{position:'fixed'}} className={`${loader? 'ui text loader': ''}`}>{loader? <h3>Loading</h3>: ''}
                         </div>
                     </div>
-            <HashRouter history={history}>
+            <BrowserRouter history={history}>
                 <Header />
                     <div>
                     <Routes>
@@ -43,7 +43,7 @@ const App = () => {
                 <Footer/>
                 </div>
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         </main>
     );
 };
