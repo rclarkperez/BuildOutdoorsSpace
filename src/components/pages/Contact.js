@@ -113,7 +113,7 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-    console.log(stateSelected, values.state, geoCity, values.city);
+    console.log(stateSelected, values.state, geoCity, values.City);
     return (
         <form 
         className='ui form submit segment' 
@@ -168,6 +168,7 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field segment">
                 <Dropdown 
+                name="State"
                 geoState= {'Select a State'}
                 options={States}
                 labelString={'State'}
@@ -179,7 +180,7 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field segment">
                 <Dropdown 
-                name="state"
+                name="Are you a new Client?"
                 options={options}
                 labelString={'Are you a new client?'}
                 selected={previousSelected}
