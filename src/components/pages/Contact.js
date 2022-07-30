@@ -18,7 +18,6 @@ const options = [
 //be key value pairs and fix throughout out, then form submission will work 
 const Contact = ({ loaderToggle }) => {
     const ref = useRef();
-    const [previousSelected, previousSetSelection] =useState('Yes');
     const [stateSelected, stateSetSelection] =useState('Select a State');
     const [values, setValues] = useState({
         name: '',
@@ -26,7 +25,7 @@ const Contact = ({ loaderToggle }) => {
         phone: '',
         City: '',
         state: '',
-        previousSelected: 'Yes',
+        previousSelected: 'cat',
         message: ''
 
     });
@@ -206,16 +205,19 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field segment">
                 <div ref={ref} className="field ui form">
-                <label>Are you a new Client?</label>
-                    <select name="Are you a new Client?">                    
-                        {options.map((option) => (
-                        <option className="item" 
-                            key ={option.label}
-                            onClick={() => onPrevClientChange(option.label)}>
-                                {option.label} 
-                        </option>
-                        ))}
+                <label>
+                    Are you a new Client?
+                    <select name="Are you a new Client?"
+                        value={values.previousSelected}
+                        onChange={onPrevClientChange}>                    
+                            {options.map((option) => (
+                            <option className="item" 
+                                key ={option.label}>
+                                    {option.label} 
+                            </option>
+                            ))}
                     </select>
+                </label>
                  </div>
             </div>
 
