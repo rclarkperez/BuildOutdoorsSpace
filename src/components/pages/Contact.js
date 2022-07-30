@@ -191,6 +191,7 @@ const Contact = ({ loaderToggle }) => {
                 labelString={'State'}
                 selected={stateSelected}
                 setSelection={stateSetSelection}
+                type={'selection'}
                 />
             </div>
 
@@ -203,6 +204,7 @@ const Contact = ({ loaderToggle }) => {
                 labelString={'Are you a new client?'}
                 selected={previousSelected}
                 setSelection={previousSetSelection}
+                type={'selection'}
                 />
             </div>
 

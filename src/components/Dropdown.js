@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 
-const Dropdown = ({labelString, options, selected, setSelection, labelId, toggleVisibility, isHeader, name}) => {
+const Dropdown = ({labelString, options, selected, setSelection, type, labelId, toggleVisibility, isHeader, name}) => {
     const [open, setAsOpen] = useState(false);   
     const ref = useRef();
     
@@ -51,9 +51,10 @@ const Dropdown = ({labelString, options, selected, setSelection, labelId, toggle
             <label>{labelString}</label>
             {(isHeader)?
                 <div value={selected} onClick={()=>setAsOpen(!open)}
-                className={`ui dropdown ${open ? 'visible active': ''}`}>
+                className={`ui ${type} dropdown ${open ? 'visible active': ''}`}>
 
                     <div className="text" id={labelId}>{selected}</div>
+                    {type? <i className="dropdown icon"></i>: <></>}
                     <div className={`menu ${open ? 'visible transition': ''}`}>
                         {renderOptionHeader}
                     </div>
