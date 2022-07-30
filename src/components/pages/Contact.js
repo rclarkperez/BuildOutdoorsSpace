@@ -1,7 +1,7 @@
 import Dropdown from "../Dropdown";
 import States from "../objects/States";
 import telephoneCheck from "../functions/TelephoneValidator";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
 
@@ -17,6 +17,7 @@ const options = [
 ///destructure all values in 
 //be key value pairs and fix throughout out, then form submission will work 
 const Contact = ({ loaderToggle }) => {
+    const ref = useRef();
     const [previousSelected, previousSetSelection] =useState('Yes');
     const [stateSelected, stateSetSelection] =useState('Select a State');
     const [values, setValues] = useState({
@@ -64,6 +65,14 @@ const Contact = ({ loaderToggle }) => {
         setValues(values =>({
             ...values,
             email: e.target.value
+        })
+            );
+    };
+
+    const onPrevClientChange = (e) => {
+        setValues(values =>({
+            ...values,
+            previousSelected: e.target.value
         })
             );
     };
@@ -126,7 +135,7 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-    console.log(stateSelected, values.state, values.City);
+    console.log(stateSelected, values.state, values.City, values.previousSelected);
     return (
         <form 
         className='ui form submit segment' 
@@ -182,7 +191,7 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field segment">
                 <Dropdown 
-                name={"State"}
+                name="State"
                 isHeader ={false}
                 setValues={setValues}
                 geoState= {'Select a State'}
@@ -196,16 +205,18 @@ const Contact = ({ loaderToggle }) => {
             </div>
 
             <div className="ui field segment">
-                <Dropdown 
-                name={"Are you a new Client?"}
-                isHeader ={false}
-                setValues={setValues}
-                options={options}
-                labelString={'Are you a new client?'}
-                selected={previousSelected}
-                setSelection={previousSetSelection}
-                type={'selection'}
-                />
+                <div ref={ref} className="field ui form">
+                <label>Are you a new Client?</label>
+                    <select name="Are you a new Client?">                    
+                        {options.map((option) => (
+                        <option className="item" 
+                            key ={option.label}
+                            onClick={() => onPrevClientChange(option.label)}>
+                                {option.label} 
+                        </option>
+                        ))}
+                    </select>
+                 </div>
             </div>
 
             <div className="ui field segment">
