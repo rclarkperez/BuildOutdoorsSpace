@@ -37,6 +37,14 @@ const Contact = ({ loaderToggle }) => {
         })
             );
     };
+    const onStateChange = (e) => {
+        setValues(values =>({
+            ...values,
+            state: e.target.value
+        })
+            );
+    };
+
     const onPhoneChange = (e) => {
         setValues(values =>({
             ...values,
@@ -174,24 +182,27 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field segment">
                 <Dropdown 
-                name="State"
+                name={"State"}
+                isHeader ={false}
+                setValues={setValues}
                 geoState= {'Select a State'}
+                onStateChange={onStateChange}
                 options={States}
                 labelString={'State'}
                 selected={stateSelected}
                 setSelection={stateSetSelection}
-                type={'selection'}
                 />
             </div>
 
             <div className="ui field segment">
                 <Dropdown 
-                name="Are you a new Clientz?"
+                name={"Are you a new Client?"}
+                isHeader ={false}
+                setValues={setValues}
                 options={options}
                 labelString={'Are you a new client?'}
                 selected={previousSelected}
                 setSelection={previousSetSelection}
-                type={'selection'}
                 />
             </div>
 

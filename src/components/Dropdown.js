@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 
-const Dropdown = ({labelString, options, selected, setSelection, type, labelId, toggleVisibility}) => {
+const Dropdown = ({labelString, options, selected, setSelection, labelId, toggleVisibility, isHeader, name}) => {
     const [open, setAsOpen] = useState(false);   
     const ref = useRef();
     
@@ -12,6 +12,8 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId, 
         }
         setAsOpen(false);
     } 
+
+    
     useEffect(() => {
         document.body.addEventListener("click", onBodyClick, { capture: true });
                 document.body.addEventListener("click", onBodyClick, { capture: true });
@@ -21,8 +23,8 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId, 
         };
     },[]);
     
-    const renderOptions = options.map((option) => {
-        if (option.hasOwnProperty('address')) {
+           
+    const renderOptionHeader = options.map((option) => {
             return (
                 <div className="item" 
                 key ={option.label}>
@@ -32,29 +34,35 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId, 
                     {option.label}
                     </Link>
                 </div>
-            )
-        }
+        
+    )});
+
+    const renderOption = options.map((option) => {
         return (
-            <div className="item" 
+            <option className="item" 
             key ={option.label}
             onClick={() => setSelection(option.label)}>
                 {option.label} 
-            </div>
-        )
-    });
+            </option>
+        )});
 
     return (
         <div ref={ref} className="field ui form">
-                <label>{labelString}</label>
+            <label>{labelString}</label>
+            {(isHeader)?
                 <div value={selected} onClick={()=>setAsOpen(!open)}
-                className={`ui ${type} dropdown ${open ? 'visible active': ''}`}>
+                className={`ui dropdown ${open ? 'visible active': ''}`}>
 
                     <div className="text" id={labelId}>{selected}</div>
-                    {type? <i className="dropdown icon"></i>: <></>}
                     <div className={`menu ${open ? 'visible transition': ''}`}>
-                        {renderOptions}
+                        {renderOptionHeader}
                     </div>
                 </div>
+                    : 
+                    <select name={name}>
+                        {renderOption}
+                    </select>
+            }
             </div>
     );
 };

@@ -62,6 +62,7 @@ const Header = () => {
                 <div id='Link' className="ui item" >
                         <Dropdown 
                         toggleVisibility={toggleVisibility} 
+                        isHeader ={true}
                         labelId={'labelHeader'}
                         options ={options}
                         selected={'Services'}/>
@@ -87,7 +88,7 @@ const Header = () => {
         mediaMatch()
         window.addEventListener('resize', mediaMatch, { capture: true });
     },[]);
-        
+
     return (
         <div className="ui secondary pointing menu header floating" id="header">
             {!mobileDisplay? regularRender(): (visibility? openRender(): closeRender())}
