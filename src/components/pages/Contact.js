@@ -25,7 +25,7 @@ const Contact = ({ loaderToggle }) => {
         phone: '',
         City: '',
         state: '',
-        previousSelected: 'cat',
+        New: 'Yes',
         message: ''
 
     });
@@ -71,7 +71,7 @@ const Contact = ({ loaderToggle }) => {
     const onPrevClientChange = (e) => {
         setValues(values =>({
             ...values,
-            previousSelected: e.target.value
+            New: e.target.value
         })
             );
     };
@@ -134,7 +134,7 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-    console.log(stateSelected, values.state, values.City, values.previousSelected);
+    console.log(stateSelected, values.state, values.City, values.New);
     return (
         <form 
         className='ui form submit segment' 
@@ -207,8 +207,8 @@ const Contact = ({ loaderToggle }) => {
                 <div ref={ref} className="field ui form">
                 <label>
                     Are you a new Client?
-                    <select name="Are you a new Client?"
-                        value={values.previousSelected}
+                    <select name="New?"
+                        value={values.New}
                         onChange={onPrevClientChange}>                    
                             {options.map((option) => (
                             <option className="item" 
