@@ -187,8 +187,9 @@ const Contact = ({ loaderToggle }) => {
             <div className="ui field segment">
                 <div ref={ref} className="field ui form">
                     <label>State</label>
-                        <select name="State"
-                            value={values.State}
+                        <select 
+                            name="State"
+                            value={values.state}
                             onChange={onStateChange}>   
                                 <option>Select a State</option>                 
                                 {States.map((state) => (
