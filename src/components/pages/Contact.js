@@ -14,8 +14,6 @@ const options = [
     }
 ];
 
-///destructure all values in 
-//be key value pairs and fix throughout out, then form submission will work 
 const Contact = ({ loaderToggle }) => {
     const ref = useRef();
     const [values, setValues] = useState({
@@ -132,7 +130,7 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-    console.log(values.state, values.City, values.New);
+
     return (
         <form 
         className='ui form submit segment' 
@@ -189,7 +187,7 @@ const Contact = ({ loaderToggle }) => {
             <div className="ui field segment">
                 <div ref={ref} className="field ui form">
                     <label>
-                        State
+                        State</label>
                         <select name="State"
                             value={values.State}
                             onChange={onStateChange}>   
@@ -201,7 +199,7 @@ const Contact = ({ loaderToggle }) => {
                                 </option>
                                 ))}
                         </select>
-                    </label>
+                    
                  </div>
             </div>
 
