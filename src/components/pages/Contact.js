@@ -18,7 +18,6 @@ const options = [
 //be key value pairs and fix throughout out, then form submission will work 
 const Contact = ({ loaderToggle }) => {
     const ref = useRef();
-    const [stateSelected, stateSetSelection] =useState('Select a State');
     const [values, setValues] = useState({
         name: '',
         email: '',
@@ -103,7 +102,6 @@ const Contact = ({ loaderToggle }) => {
                 setValues(values =>({
                     ...values,
                     City: city}))
-                stateSetSelection(state)
                 setValues(values =>({
                     ...values,
                     State: state}))
@@ -134,7 +132,7 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-    console.log(stateSelected, values.state, values.City, values.New);
+    console.log(values.state, values.City, values.New);
     return (
         <form 
         className='ui form submit segment' 
@@ -194,7 +192,8 @@ const Contact = ({ loaderToggle }) => {
                         State
                         <select name="State"
                             value={values.State}
-                            onChange={onStateChange}>                    
+                            onChange={onStateChange}>   
+                                <option>Select a State</option>                 
                                 {States.map((state) => (
                                 <option className="item" 
                                     key ={state.label}>
@@ -212,7 +211,8 @@ const Contact = ({ loaderToggle }) => {
                     Are you a new Client?
                     <select name="New"
                         value={values.New}
-                        onChange={onPrevClientChange}>                    
+                        onChange={onPrevClientChange}>   
+                            <option>Select</option>                 
                             {options.map((option) => (
                             <option className="item" 
                                 key ={option.label}>
