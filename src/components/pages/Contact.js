@@ -21,7 +21,7 @@ const Contact = ({ loaderToggle }) => {
         email: '',
         phone: '',
         City: '',
-        state: '',
+        State: '',
         New: '',
         message: ''
 
@@ -37,7 +37,7 @@ const Contact = ({ loaderToggle }) => {
     const onStateChange = (e) => {
         setValues(values =>({
             ...values,
-            state: e.target.value
+            State: e.target.value
         })
             );
     };
@@ -189,7 +189,7 @@ const Contact = ({ loaderToggle }) => {
                     <label>State</label>
                         <select 
                             name="State"
-                            value={values.state}
+                            value={values.State}
                             onChange={onStateChange}>   
                                 <option>Select a State</option>                 
                                 {States.map((state) => (
