@@ -186,39 +186,35 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field segment">
                 <div ref={ref} className="field ui form">
-                    <label>
-                        State</label>
+                    <label>State</label>
                         <select name="State"
                             value={values.State}
                             onChange={onStateChange}>   
                                 <option>Select a State</option>                 
                                 {States.map((state) => (
-                                <option className="item" 
-                                    key ={state.label}>
-                                        {state.label} 
-                                </option>
+                                    <option className="item" 
+                                        key ={state.label}>
+                                            {state.label} 
+                                    </option>
                                 ))}
                         </select>
-                    
                  </div>
             </div>
 
             <div className="ui field segment">
                 <div ref={ref} className="field ui form">
-                <label>
-                    Are you a new Client?
+                <label>Are you a new Client?</label>
                     <select name="New"
                         value={values.New}
                         onChange={onPrevClientChange}>   
                             <option>Select</option>                 
                             {options.map((option) => (
-                            <option className="item" 
-                                key ={option.label}>
-                                    {option.label} 
-                            </option>
+                                <option className="item" 
+                                    key ={option.label}>
+                                        {option.label} 
+                                </option>
                             ))}
                     </select>
-                </label>
                  </div>
             </div>
 
