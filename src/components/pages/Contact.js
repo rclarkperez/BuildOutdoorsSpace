@@ -25,7 +25,7 @@ const Contact = ({ loaderToggle }) => {
         phone: '',
         City: '',
         state: '',
-        New: 'Yes',
+        New: '',
         message: ''
 
     });
@@ -106,7 +106,7 @@ const Contact = ({ loaderToggle }) => {
                 stateSetSelection(state)
                 setValues(values =>({
                     ...values,
-                    state: state}))
+                    State: state}))
                 loaderToggle(false)
 
         });
@@ -189,18 +189,21 @@ const Contact = ({ loaderToggle }) => {
             </div>
 
             <div className="ui field segment">
-                <Dropdown 
-                name="State"
-                isHeader ={false}
-                setValues={setValues}
-                geoState= {'Select a State'}
-                onStateChange={onStateChange}
-                options={States}
-                labelString={'State'}
-                selected={stateSelected}
-                setSelection={stateSetSelection}
-                type={'selection'}
-                />
+                <div ref={ref} className="field ui form">
+                    <label>
+                        State
+                        <select name="State"
+                            value={values.State}
+                            onChange={onStateChange}>                    
+                                {States.map((state) => (
+                                <option className="item" 
+                                    key ={state.label}>
+                                        {state.label} 
+                                </option>
+                                ))}
+                        </select>
+                    </label>
+                 </div>
             </div>
 
             <div className="ui field segment">
