@@ -174,7 +174,7 @@ const Contact = ({ loaderToggle }) => {
                 </span>
             </div>
            
-            <div className="ui field segment">
+            <div className="ui field segment required">
                 <label>City</label>
                 <input 
                 placeholder={' Seattle'} 
@@ -184,7 +184,7 @@ const Contact = ({ loaderToggle }) => {
                 ></input>
             </div>
 
-            <div className="ui field segment">
+            <div className="ui field segment required">
                 <div ref={ref} className="field ui form">
                     <label>State</label>
                         <select 
@@ -202,7 +202,7 @@ const Contact = ({ loaderToggle }) => {
                  </div>
             </div>
 
-            <div className="ui field segment">
+            <div className="ui field segment required">
                 <div ref={ref} className="field ui form">
                 <label>Are you a new Client?</label>
                     <select name="New"
@@ -231,7 +231,7 @@ const Contact = ({ loaderToggle }) => {
 
             <div>
                 <button 
-                disabled={!telephoneCheck(values.phone)} 
+                disabled={!telephoneCheck(values.phone) } 
                 className="ui submit button primary"
                 >Submit
                 </button>
