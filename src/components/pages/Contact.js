@@ -25,7 +25,7 @@ const Contact = ({ loaderToggle }) => {
         phone: '',
         City: '',
         state: '',
-        NewClient: 'Yes',
+        New: 'Yes',
         message: ''
 
     });
@@ -207,8 +207,8 @@ const Contact = ({ loaderToggle }) => {
                 <div ref={ref} className="field ui form">
                 <label>
                     Are you a new Client?
-                    <select name="New Client"
-                        value={values.NewClient}
+                    <select name="New"
+                        value={values.New}
                         onChange={onPrevClientChange}>                    
                             {options.map((option) => (
                             <option className="item" 
