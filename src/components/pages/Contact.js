@@ -134,6 +134,7 @@ const Contact = ({ loaderToggle }) => {
     return (
         <form 
         className='ui form submit segment' 
+        method='POST'
         onSubmit={onSubmit}
         data-netlify='true'
         action="/submission"
