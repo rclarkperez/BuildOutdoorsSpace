@@ -45,7 +45,6 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId, 
                 {option.label} 
             </option>
         )});
-    console.log(name)
     return (
         <div ref={ref} className="field ui form">
             <label>{labelString}</label>

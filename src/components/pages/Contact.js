@@ -130,10 +130,11 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-
+    // make fields required to fill them in without cursor
     return (
         <form 
         className='ui form submit segment' 
+        method='post'
         onSubmit={onSubmit}
         data-netlify='true'
         action="/submission"
@@ -184,8 +185,8 @@ const Contact = ({ loaderToggle }) => {
                 ></input>
             </div>
 
-            <div className="ui field segment required">
-                <div ref={ref} className="field ui form">
+            <div className="ui field segment">
+                <div ref={ref} className="field ui form required">
                     <label>State</label>
                         <select 
                             name="State"
@@ -202,8 +203,8 @@ const Contact = ({ loaderToggle }) => {
                  </div>
             </div>
 
-            <div className="ui field segment required">
-                <div ref={ref} className="field ui form">
+            <div className="ui field segment ">
+                <div ref={ref} className="field ui form required">
                 <label>Are you a new Client?</label>
                     <select name="New"
                         value={values.New}
