@@ -58,6 +58,7 @@ const Header = () => {
                     <h2 id='title'>Amanda K. Clark Law</h2>
                 </a>
                 <i id="menu-icon" className="fa fa-close" onClick={()=> {toggleVisibility(!visibility)}}></i>
+                <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' to='/'><label id='labelHeader'>Home</label></Link>
                 <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' to='about'><label id='labelHeader'>About</label></Link>
                 <div id='Link' className="ui item" >
                         <Dropdown 

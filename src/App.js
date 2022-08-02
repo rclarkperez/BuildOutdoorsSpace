@@ -10,7 +10,6 @@ import Guardianships from "./components/pages/Guardianships";
 import Probates from "./components/pages/Probates";
 import Footer from "./components/Footer";
 import Submission from "./components/pages/Submission";
-import Oops from "./components/pages/Oops";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import history from "./history";
 
@@ -37,8 +36,6 @@ const App = () => {
                         <Route exact path='/probates' exact element={<Probates/>}/>
                         <Route exact path='/*' exact element={<NotFound/>}/>
                         <Route exact path='/submission' exact element={<Submission/>}/>
-                        <Route exact path='/oops' exact element={<Oops/>}/>
-
                         <Route exact path='/*' exact element={<NotFound/>}/>
                     </Routes>
                

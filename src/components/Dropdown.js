@@ -13,7 +13,6 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId, 
         setAsOpen(false);
     } 
 
-    
     useEffect(() => {
         document.body.addEventListener("click", onBodyClick, { capture: true });
                 document.body.addEventListener("click", onBodyClick, { capture: true });
@@ -37,32 +36,19 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId, 
         
     )});
 
-    const renderOption = options.map((option) => {
-        return (
-            <option className="item" 
-            key ={option.label}
-            onClick={() => setSelection(option.label)}>
-                {option.label} 
-            </option>
-        )});
+
     return (
         <div ref={ref} className="field ui form">
             <label>{labelString}</label>
-            {(isHeader)?
                 <div value={selected} onClick={()=>setAsOpen(!open)}
                 className={`ui ${type} dropdown ${open ? 'visible active': ''}`}>
-
                     <div className="text" id={labelId}>{selected}</div>
                     {type? <i className="dropdown icon"></i>: <></>}
                     <div className={`menu ${open ? 'visible transition': ''}`}>
                         {renderOptionHeader}
                     </div>
                 </div>
-                    : 
-                    <select name={name}>
-                        {renderOption}
-                    </select>
-            }
+                   
             </div>
     );
 };

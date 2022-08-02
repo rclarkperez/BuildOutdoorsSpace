@@ -1,10 +1,8 @@
-import Dropdown from "../Dropdown";
+//import Dropdown from "../Dropdown";
 import States from "../objects/States";
 import telephoneCheck from "../functions/TelephoneValidator";
-import Submission from "./Submission";
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import Oops from "./Oops";
 import { useNavigate } from "react-router-dom";
 
 
@@ -130,7 +128,6 @@ const Contact = ({ loaderToggle }) => {
             body: encode({ "form-name": "contact", ...values })
             })
             .then(() => navigate('/submission'))
-            .catch(() => navigate('/oops'))
            
     }
     
@@ -138,7 +135,6 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-    // make custom submission message come up 
     return (
         <form 
         name= "contact"
