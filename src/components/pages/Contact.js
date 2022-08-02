@@ -133,11 +133,12 @@ const Contact = ({ loaderToggle }) => {
     // make fields required to fill them in without cursor
     return (
         <form 
+        name= "contact"
+        action="/submission"
         className='ui form submit segment' 
         method='POST'
         onSubmit={onSubmit}
         data-netlify='true'
-        action="/submission"
         >
             <input type='hidden' name='form-name' value='contact'></input>
             <h2 className="ui center aligned container">Contact Us</h2>
