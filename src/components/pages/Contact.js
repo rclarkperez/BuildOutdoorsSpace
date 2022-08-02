@@ -5,6 +5,7 @@ import Submission from "./Submission";
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import Oops from "./Oops";
+import { useNavigate } from "react-router-dom";
 
 
 const options = [
@@ -119,14 +120,17 @@ const Contact = ({ loaderToggle }) => {
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
       }
+
+    const navigate = useNavigate();
+
     const onSubmit = (e) => {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...values })
             })
-            .then(Submission())
-            .catch(Oops())
+            .then(() => {navigate('/submissions')})
+            .catch(() => {navigate('/oops')})
            
     }
     
