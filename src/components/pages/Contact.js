@@ -124,6 +124,7 @@ const Contact = ({ loaderToggle }) => {
     const navigate = useNavigate();
 
     const onSubmit = (e) => {
+        e.preventDefault();
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
