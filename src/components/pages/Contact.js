@@ -122,7 +122,6 @@ const Contact = ({ loaderToggle }) => {
       }
 
     const navigate = useNavigate();
-
     const onSubmit = (e) => {
         e.preventDefault();
         fetch("/", {
@@ -130,8 +129,8 @@ const Contact = ({ loaderToggle }) => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...values })
             })
-            .then(() => {navigate('/submissions')})
-            .catch(() => {navigate('/oops')})
+            .then(() => navigate('/submission'))
+            .catch(() => navigate('/oops'))
            
     }
     
@@ -139,7 +138,7 @@ const Contact = ({ loaderToggle }) => {
     useEffect(()=> {
         geoLocation()
     }, []);
-    // make fields required to fill them in without cursor
+    // make custom submission message come up 
     return (
         <form 
         name= "contact"
