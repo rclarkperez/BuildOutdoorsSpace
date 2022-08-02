@@ -126,8 +126,8 @@ const Contact = ({ loaderToggle }) => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...values })
             })
-            .then(()=> {Submission()})
-            .catch((error) => {Oops()})
+            .then(Submission())
+            .catch(Oops())
            
     }
     
