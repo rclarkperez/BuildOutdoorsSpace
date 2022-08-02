@@ -1,8 +1,10 @@
 import Dropdown from "../Dropdown";
 import States from "../objects/States";
 import telephoneCheck from "../functions/TelephoneValidator";
+import Submission from "./Submission";
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import Oops from "./Oops";
 
 
 const options = [
@@ -118,11 +120,14 @@ const Contact = ({ loaderToggle }) => {
             .join("&");
       }
     const onSubmit = (e) => {
+        e.preventDefault();
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...values })
             })
+            .then(()=> {Submission()})
+            .catch((error) => {Oops()})
            
     }
     
