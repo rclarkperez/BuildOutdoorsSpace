@@ -149,6 +149,7 @@ const Contact = ({ loaderToggle }) => {
                 value={values.name} 
                 placeholder={'John Jackson'}
                 onChange={onNameChange}
+                required
                 ></input>
             </div>
 
@@ -158,6 +159,7 @@ const Contact = ({ loaderToggle }) => {
                 name="email"
                 placeholder={'email@email.org'}
                 onChange={onEmailChange}
+                required
                 ></input>
             </div>
 
@@ -169,6 +171,7 @@ const Contact = ({ loaderToggle }) => {
                     name="phone"
                     value={values.phone}
                     onChange={onPhoneChange}
+                    required
                     />
                 <span className="ui field error">
                     {`${values.phone.length ===0 || telephoneCheck(values.phone)? '' : errorMessage}`}
@@ -182,17 +185,19 @@ const Contact = ({ loaderToggle }) => {
                 value={values.City} 
                 onChange={onCityChange}
                 name="City"
+                required
                 ></input>
             </div>
 
-            <div className="ui field segment">
+            <div className="ui field segment ">
                 <div ref={ref} className="field ui form required">
                     <label>State</label>
                         <select 
                             name="State"
                             value={values.State}
-                            onChange={onStateChange}>   
-                                <option>Select a State</option>                 
+                            onChange={onStateChange}
+                            required>   
+                                <option value="">Select a State</option>                 
                                 {States.map((state) => (
                                     <option className="item" 
                                         key ={state.label}>
@@ -208,8 +213,10 @@ const Contact = ({ loaderToggle }) => {
                 <label>Are you a new Client?</label>
                     <select name="New"
                         value={values.New}
-                        onChange={onPrevClientChange}>   
-                            <option>Select</option>                 
+                        onChange={onPrevClientChange}
+                        required
+                        >   
+                            <option value="">Select</option>                 
                             {options.map((option) => (
                                 <option className="item" 
                                     key ={option.label}>
@@ -220,19 +227,20 @@ const Contact = ({ loaderToggle }) => {
                  </div>
             </div>
 
-            <div className="ui field segment">
+            <div className="ui field segment required">
                 <label>Please Describe your Case:</label>
                 <textarea 
                  value={values.message} 
                  name="message"
                  onChange={onMessageChange} 
-                placeholder={'It all started...'}
+                 placeholder={'It all started...'}
+                 required
                 ></textarea>
             </div>
 
             <div>
                 <button 
-                disabled={!telephoneCheck(values.phone) } 
+                disabled={!telephoneCheck(values.phone)} 
                 className="ui submit button primary"
                 >Submit
                 </button>
