@@ -4,8 +4,8 @@ import '../../style/PagesStyle/About.css';
 const About = () => {
     return (
         <div className="ui center aligned" >
-            <div className="ui segment">
-                    <h1 className="ui center aligned container">Biography</h1>
+            <div id="banner" className="ui segment">
+                    <h1 id="banner-text" className="ui center aligned container">Biography</h1>
                 </div>
                 <br/>
             <div className="ui center two column grid">

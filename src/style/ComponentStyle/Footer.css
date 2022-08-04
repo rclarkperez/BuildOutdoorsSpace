@@ -11,8 +11,10 @@
     margin-top: 3%;
 }
 #footer-text {
-    
     color: white;
+}
+#footer-text:hover {
+    color: #b5651d;
 }
 
 @media (max-width:700px) {
