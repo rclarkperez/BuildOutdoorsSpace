@@ -1,0 +1,10 @@
+#input-form {
+    margin-left: 11vh;
+    margin-right: 15vh;
+}
+
+@media (max-width:700px) {
+    #input-form {
+        margin-left: 4vh;
+    }
+}

@@ -32,7 +32,7 @@ const Header = () => {
 
     const regularRender = () => {
         return (
-            <div className="ui secondary menu header floating" id="header">
+            <div className="ui secondary menu header" id="header">
                 <a id='Link' className='item' href='/'>
                     <h2 id='title'>Amanda K. Clark Law</h2>
                 </a>
@@ -91,7 +91,7 @@ const Header = () => {
     },[]);
 
     return (
-        <div className="ui secondary pointing menu header floating" id="header">
+        <div className="ui secondary pointing fixed top menu header floating" id="header">
             {!mobileDisplay? regularRender(): (visibility? openRender(): closeRender())}
         </div>
     );

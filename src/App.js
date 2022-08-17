@@ -11,6 +11,7 @@ import Probates from "./components/pages/Probates";
 import Footer from "./components/Footer";
 import Submission from "./components/pages/Submission";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './style/App.css'
 import history from "./history";
 
 

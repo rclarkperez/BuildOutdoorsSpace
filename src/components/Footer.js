@@ -14,14 +14,17 @@ const Footer = () => {
             <div className="column" id="left-column">   
                 <h3>LOCATION:</h3>
                 <p>1348 Dale Avenue, Tacoma, WA 98402</p>
-                <div id="map" style={{height: '250px'}}></div>
+                <div id="map" ></div>
             </div>
             
             <div className="column" id="right-column"> 
                 <h3>CONTACT:</h3>
-                <h5>Phone:</h5> <p>(253)732-3090</p>
-                <h5>Fax:</h5> <p>(253)732-3191</p>
-                <h5>Email:</h5> <p>wewillfightforyou@email.com</p>
+                <h5>Phone:</h5> 
+                <p>(253)732-3090</p>
+                <h5>Fax:</h5> 
+                <p>(253)732-3191</p>
+                <h5>Email:</h5> 
+                <p>wewillfightforyou@email.com</p>
             </div>
             
             <div id='footer-specs' className="ui two column grid text align center">
@@ -32,7 +35,7 @@ const Footer = () => {
                     <h5 id ="footer-text">All Rights Reserved</h5>
                 </div>
 
-                <div className="ui text align center" >
+                <div className="ui text align center" id="lower-footer">
                     <a href="privacypolicy" className='item' id ="footer-text">Privacy Policy</a>
                     ||
                     <a className='item' href='disclaimer' id ="footer-text">Disclaimer</a>

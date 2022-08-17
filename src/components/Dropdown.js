@@ -40,7 +40,9 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId, 
     return (
         <div ref={ref} className="field ui form">
             <label>{labelString}</label>
-                <div value={selected} onClick={()=>setAsOpen(!open)}
+                <div value={selected} 
+                onMouseEnter={()=>setAsOpen(!open)}
+                onMouseLeave={()=>setAsOpen(!open)}
                 className={`ui ${type} dropdown ${open ? 'visible active': ''}`}>
                     <div className="text" id={labelId}>{selected}</div>
                     {type? <i className="dropdown icon"></i>: <></>}

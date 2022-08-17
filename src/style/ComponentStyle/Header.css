@@ -4,13 +4,16 @@
 }
 #title {
     margin-top: 1%;
+    margin-left: 8vh;
 }
 
 #pages {
     margin-left: 3%;
 }
 #header{
-    margin-top: 0vh;
+    background-color: white;
+    width: 100%;
+    position: sticky; 
 }
 #Link:hover {
     color: #b5651d;

@@ -1,29 +1,62 @@
+#about {
+    margin-bottom: 15vh;
+    margin-left: 5vh;
+}
+#grid {
+    margin-top: 5vh;
+    margin-bottom: -5vh;
+}
+#about-banner {
+    margin-top: 6vh;
+    margin-bottom: 2vh
+}
+
 #about-photo {
     background-image: url('https://images.unsplash.com/photo-1638493489135-34bf34dd320b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80');
-    height: 60vh;
-    width: 65vh;
+    height: 55vh;
+    width: 50vh;
     background-position: center;
     background-size: cover;
-    margin-left: 15vh;
+    margin-left: 18vh;
+    margin-top: 9vh;
+    margin-bottom: 10vh;
+
 }
 
-#text-content {
-    padding-left : 10vh;
+#about-text-content {
+    padding-left: 15vh;
     height: 80vh;
-    text-align: center;
+    padding-bottom: 30vh;
 }
+#about-background {
+    margin-left: 15vh;
+    margin-right: 15vh;   
+}
+
 
 @media (max-width: 700px) {
-    #about-photo {
-        margin-left: 10%;
-        margin-right: 10%;
-        padding: auto;
+    #about {
+        margin-bottom: 0vh;
+        margin-left: 0vh;
     }
-    #text-content {
-        background-position: center;
-        height: 100vh;
-        padding: 8%;
-        margin-bottom: 15%;
-    
+    #about-photo {
+        margin-bottom: 0vh;
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
+    #about-banner-text {
+       padding-left: 0vh;
+    }
+    #about-text-content {
+        margin-left: -3vh;
+        margin-right: 10vh;
+        padding-bottom: 0vh;
+
+    }
+
+    #about-background {
+        margin-left: 8vh;
+        margin-right: 10vh;
+        padding-bottom: 10vh;
     }
 }

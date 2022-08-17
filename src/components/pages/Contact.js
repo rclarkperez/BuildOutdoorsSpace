@@ -1,7 +1,7 @@
-//import Dropdown from "../Dropdown";
 import States from "../objects/States";
 import telephoneCheck from "../functions/TelephoneValidator";
 import React, { useState, useEffect, useRef } from "react";
+import '../../style/PagesStyle/Contact.css';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -139,18 +139,20 @@ const Contact = ({ loaderToggle }) => {
         <form 
         name= "contact"
         action="/submission"
-        className='ui form submit segment' 
+        className='ui form submit' 
         method='POST'
         onSubmit={onSubmit}
+        id="input-form"
         data-netlify='true'
         >
             <input type='hidden' name='form-name' value='contact'></input>
-            <h2 className="ui center aligned container">Contact Us</h2>
-
-            <div className="ui field segment required">
+            <h2 className="ui">Contact Us</h2>
+            <br/>
+            <div className="ui field required">
                 <label>Name</label>
                 <input 
                 name="name"
+                style={{width: '50vh'}}
                 value={values.name} 
                 placeholder={'John Jackson'}
                 onChange={onNameChange}
@@ -158,20 +160,23 @@ const Contact = ({ loaderToggle }) => {
                 ></input>
             </div>
 
-            <div className="ui field segment required">
+            <div className="ui field required">
                 <label >Email</label>
                 <input value={values.email} 
                 name="email"
+                style={{width: '50vh'}}
+
                 placeholder={'email@email.org'}
                 onChange={onEmailChange}
                 required
                 ></input>
             </div>
 
-            <div className={`ui field segment required ${values.phone.length ===0 || telephoneCheck(values.phone) ? '' :'error'}`}>
+            <div className={`ui field required ${values.phone.length ===0 || telephoneCheck(values.phone) ? '' :'error'}`}>
                 <label>Phone</label>
                 <input 
                     className="ui input"
+                    style={{width: '50vh'}}
                     placeholder={'555-555-5555'}
                     name="phone"
                     value={values.phone}
@@ -183,10 +188,11 @@ const Contact = ({ loaderToggle }) => {
                 </span>
             </div>
            
-            <div className="ui field segment required">
+            <div className="ui field required">
                 <label>City</label>
                 <input 
-                placeholder={' Seattle'} 
+                style={{width: '50vh'}}
+                placeholder={'Seattle'} 
                 value={values.City} 
                 onChange={onCityChange}
                 name="City"
@@ -194,11 +200,13 @@ const Contact = ({ loaderToggle }) => {
                 ></input>
             </div>
 
-            <div className="ui field segment ">
+            <div className="ui field">
                 <div ref={ref} className="field ui form required">
                     <label>State</label>
                         <select 
                             name="State"
+                            style={{width: '50vh'}}
+
                             value={values.State}
                             onChange={onStateChange}
                             required>   
@@ -213,11 +221,13 @@ const Contact = ({ loaderToggle }) => {
                  </div>
             </div>
 
-            <div className="ui field segment ">
+            <div className="ui field ">
                 <div ref={ref} className="field ui form required">
                 <label>Are you a new Client?</label>
                     <select name="New"
                         value={values.New}
+                        style={{width: '50vh'}}
+
                         onChange={onPrevClientChange}
                         required
                         >   
@@ -232,9 +242,11 @@ const Contact = ({ loaderToggle }) => {
                  </div>
             </div>
 
-            <div className="ui field segment required">
+            <div className="ui field required">
                 <label>Please Describe your Case:</label>
                 <textarea 
+                style={{width: '100vh'}}
+
                  value={values.message} 
                  name="message"
                  onChange={onMessageChange} 
@@ -242,7 +254,7 @@ const Contact = ({ loaderToggle }) => {
                  required
                 ></textarea>
             </div>
-
+            <br/>
             <div>
                 <button 
                 disabled={!telephoneCheck(values.phone)} 
@@ -250,6 +262,7 @@ const Contact = ({ loaderToggle }) => {
                 >Submit
                 </button>
             </div>
+            <br/>
         </form>
 
     );

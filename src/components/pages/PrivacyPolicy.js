@@ -3,7 +3,9 @@ import React from "react";
 const Policy = () => {
     return (
         <div className="ui center aligned container">
+            <br/>
             <h2>Privacy Policy</h2>
+            <br/>
             <div className="ui segment">
             <p>
             This privacy policy applies to information collected online from users of this website. In this policy, you can learn what kind of information we collect, when and how we might use that information, how we protect the information, and the choices you have with respect to your personal information.
@@ -82,6 +84,7 @@ const Policy = () => {
             </p>
             <h5>Effective September 14, 2015.</h5>
             </div>
+            <br/>
         </div>
     );
 };
