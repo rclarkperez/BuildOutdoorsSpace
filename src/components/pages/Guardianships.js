@@ -14,7 +14,7 @@ const Guardianships = () => {
                 <p className="b">
                     We are now living longer than ever before. Never has creating a plan for our care as we age been more important. Costs for long term care, such as memory care, can range from a few thousand to more than $10,000 a month and many of us will need to create plans that include Medicaid planning. This type of planning can help preserve assets for a spouse or ensure a smooth transition to Medicaid.
 
-                    At Amanda K. Clark Law, we understand that these can be tough conversations to broach. Our attorneys offer decades of experience helping people just like you to understand their options and make decisions that serve their retirement and care goals.
+                    At Jeanette M. Johnson Law, we understand that these can be tough conversations to broach. Our attorneys offer decades of experience helping people just like you to understand their options and make decisions that serve their retirement and care goals.
                 </p>
                 
                 <h2> Who Needs A Special Needs Trust?</h2>
@@ -28,7 +28,7 @@ const Guardianships = () => {
                     Whether you are concerned for your own long-term care as you age, or you have a loved one with special needs, there is nothing more important than planning.
 
                     Get The Accessible, Reliable Help You Need
-                    When done correctly, both Medicaid planning and establishing special needs trusts can greatly enhance a person’s quality of life. At Amanda K. Clark Law, our attorneys have been practicing for 45 years combined. We enjoy helping clients protect themselves and their families by providing accurate, clear advice and representation on these matters. Call (253)732-3090 to schedule a consultation with a member of our legal team. You can also reach us by sending the firm an inquiry email.
+                    When done correctly, both Medicaid planning and establishing special needs trusts can greatly enhance a person’s quality of life. At Jeanette M. Johnson Law, our attorneys have been practicing for 45 years combined. We enjoy helping clients protect themselves and their families by providing accurate, clear advice and representation on these matters. Call (253)732-3090 to schedule a consultation with a member of our legal team. You can also reach us by sending the firm an inquiry email.
                 </p>
             </div>
         </div>

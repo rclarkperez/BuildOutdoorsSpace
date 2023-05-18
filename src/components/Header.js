@@ -34,7 +34,7 @@ const Header = () => {
         return (
             <div className="ui secondary menu header" id="header">
                 <a id='Link' className='item' href='/'>
-                    <h2 id='title'>Amanda K. Clark Law</h2>
+                    <h2 id='title'>Jeanette M. Johnson Law</h2>
                 </a>
                 <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }} id='Link' className='item' to='/'><label id='labelHeader'>Home</label></Link>
                 <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' to='about'><label id='labelHeader'>About</label></Link>
@@ -55,7 +55,7 @@ const Header = () => {
         return (
             <div className="ui secondary menu header floating" id="header">
                <a id='Link' className='item' href='/'>
-                    <h2 id='title'>Amanda K. Clark Law</h2>
+                    <h2 id='title'>Jeanette M. Johnson Law</h2>
                 </a>
                 <i id="menu-icon" className="fa fa-close" onClick={()=> {toggleVisibility(!visibility)}}></i>
                 <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' to='/'><label id='labelHeader'>Home</label></Link>

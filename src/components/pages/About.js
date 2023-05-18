@@ -8,17 +8,17 @@ const About = () => {
                 <div id="about-photo" className="ui segment column"></div>
                 <div id='about-text-content' className="ui column text align center">
                     <div id="about-banner">
-                        <h1 id="about-banner-text" className="ui container">Amanda K Clark</h1>
+                        <h1 id="about-banner-text" className="ui container">Jeanette M. Johnson</h1>
                     </div>
 
                     <h4>Education</h4>
                     <p id="edu" className="b">
-                        University of Idaho College of Law, Boise, Idaho
+                        University of Arizona 
                         <br/>
-                        Honors: Dean’s List
+                        Honors: Cum Laude 
                         <br/>
                         <br/>
-                        Washington State University, Pullman, Washington
+                        University of California, Berkley
                         <br/>
                         B.A.
                         <br/>
@@ -35,10 +35,10 @@ const About = () => {
             <div id="about-background">
                 <h3>Background</h3>
                     <p className="b">
-                    Amanda K. Clark received her law degree from the University of Idaho, College of Law. Prior to her admission to the bar, Amanda was a legal assistant for six years gaining invaluable experience in family and elder law.
-                    Amanda's law practice focuses on estate planning, probates, and adult guardianships. Amanda represents families seeking protective arrangements for their loved ones, including guardianships and conservatorships. 
+                    Jeanette M. Johnson received her law degree from the University of Arizona. Prior to her admission to the bar, Jeanette was a legal assistant for ten years gaining invaluable experience in elder law.
+                    Jeanette's law practice focuses on estate planning, probates, and guardianships. Jeanette represents families seeking protective arrangements for their loved ones, including guardianships and conservatorships. 
                     Her clients appreciate her compassionate and practical approach to the law.
-                    Amanda lives in Tacoma with her husband, Ryan. In her spare time, Amanda enjoys spending time with her family, hiking, and exploring the many restaurants and food trucks in the Pacific Northwest.
+                    Jeanette lives in Tacoma with her husband, Joe and their two goldendoodles. In her spare time, Jeanette enjoys spending time with her family, hiking, and exploring the many restaurants and food trucks in the Pacific Northwest.
                 </p>
             </div>
         </div>
