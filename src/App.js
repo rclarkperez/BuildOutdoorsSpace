@@ -27,15 +27,15 @@ const App = () => {
                 <Header />
                     <div>
                     <Routes>
-                        <Route exact path='/' exact element={<Home/>}/>
-                        <Route exact path='/about' exact element={<About/>}/>
-                        <Route exact path='/contact' exact element={<Contact loaderToggle={loaderToggle}/>}/>
-                        <Route exact path='/excavations' exact element={<Excavations/>}/>
-                        <Route exact path='/Kitchens' exact element={<OutdoorKitchens/>}/>
-                        <Route exact path='/*' exact element={<NotFound/>}/>
-                        <Route exact path='/submission' exact element={<Submission/>}/>
-                        <Route exact path='/*' exact element={<NotFound/>}/>
-                        <Route exact path='/reviews*' exact element={<Reviews/>}/>
+                        <Route exact path='/' element={<Home/>}/>
+                        <Route exact path='/about'  element={<About/>}/>
+                        <Route exact path='/contact'  element={<Contact loaderToggle={loaderToggle}/>}/>
+                        <Route exact path='/excavations'  element={<Excavations/>}/>
+                        <Route exact path='/Kitchens'  element={<OutdoorKitchens/>}/>
+                        <Route exact path='/*'  element={<NotFound/>}/>
+                        <Route exact path='/submission'  element={<Submission/>}/>
+                        <Route exact path='/*'  element={<NotFound/>}/>
+                        <Route exact path='/reviews*'  element={<Reviews/>}/>
 
                     </Routes>
                
