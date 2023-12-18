@@ -85,33 +85,33 @@ const Contact = ({ loaderToggle }) => {
 
     const errorMessage = 'ERROR: You must use a valid phone number'
     
-    const geoLocation = () => {
-        const error = async () => {
-            loaderToggle(false)
-        }
+    // const geoLocation = () => {
+    //     const error = async () => {
+    //         loaderToggle(false)
+    //     }
 
-        const success = async (position) => {
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-            const baseURL = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
+    //     const success = async (position) => {
+    //         const latitude = position.coords.latitude;
+    //         const longitude = position.coords.longitude;
+    //         const baseURL = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
            
-            await axios.get(baseURL).then((response)=> {
-                const state =  response.data.principalSubdivision
-                const city = response.data.city
-                setValues(values =>({
-                    ...values,
-                    City: city}))
-                setValues(values =>({
-                    ...values,
-                    State: state}))
-                loaderToggle(false)
+    //         await axios.get(baseURL).then((response)=> {
+    //             const state =  response.data.principalSubdivision
+    //             const city = response.data.city
+    //             setValues(values =>({
+    //                 ...values,
+    //                 City: city}))
+    //             setValues(values =>({
+    //                 ...values,
+    //                 State: state}))
+    //             loaderToggle(false)
 
-        });
-        }
-        loaderToggle(true)
+    //     });
+    //     }
+    //     loaderToggle(true)
 
-        window.navigator.geolocation.getCurrentPosition(success, error)
-    }
+    //     window.navigator.geolocation.getCurrentPosition(success, error)
+    // }
 
     const encode = (data) => {
         return Object.keys(data)
@@ -133,7 +133,7 @@ const Contact = ({ loaderToggle }) => {
     
 
     useEffect(()=> {
-        geoLocation()
+        // geoLocation()
     }, []);
     return (
         <form 
@@ -154,7 +154,7 @@ const Contact = ({ loaderToggle }) => {
                 name="name"
                 style={{width: '50vh'}}
                 value={values.name} 
-                placeholder={'John Jackson'}
+                placeholder={'John Smith'}
                 onChange={onNameChange}
                 required
                 ></input>
@@ -192,7 +192,7 @@ const Contact = ({ loaderToggle }) => {
                 <label>City</label>
                 <input 
                 style={{width: '50vh'}}
-                placeholder={'Seattle'} 
+                placeholder={'Vancouver'} 
                 value={values.City} 
                 onChange={onCityChange}
                 name="City"
@@ -243,14 +243,14 @@ const Contact = ({ loaderToggle }) => {
             </div>
 
             <div className="ui field required">
-                <label>Please Describe your Case:</label>
+                <label>Project Details:</label>
                 <textarea 
                 style={{width: '100vh'}}
 
                  value={values.message} 
                  name="message"
                  onChange={onMessageChange} 
-                 placeholder={'It all started...'}
+                //  placeholder={'It all started...'}
                  required
                 ></textarea>
             </div>

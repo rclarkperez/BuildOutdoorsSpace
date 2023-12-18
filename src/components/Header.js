@@ -5,12 +5,12 @@ import '../style/ComponentStyle/Header.css';
 
 const options = [
     {
-        label: 'Probates',
-        address: '/probates'
+        label: 'Kitchens',
+        address: '/outdoorKitchens'
     },
     {
-        label: 'Guardianships',
-        address: '/guardiansips'
+        label: 'Excavations',
+        address: '/excavations'
     },
 ]
 
@@ -19,7 +19,7 @@ const Header = () => {
     const [mobileDisplay, toggleMobile] = useState(false);
     
     const mediaMatch = () => {
-        if (window.matchMedia("(max-width: 700px)").matches){
+        if (window.matchMedia("(max-width: 650px)").matches){
             toggleVisibility(false)
             toggleMobile(true);
         }
@@ -34,10 +34,10 @@ const Header = () => {
         return (
             <div className="ui secondary menu header" id="header">
                 <a id='Link' className='item' href='/'>
-                    <h2 id='title'>Jeanette M. Johnson Law</h2>
+                    <h2 id='title'>Build Outdoors Space</h2>
                 </a>
-                <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }} id='Link' className='item' to='/'><label id='labelHeader'>Home</label></Link>
-                <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' to='about'><label id='labelHeader'>About</label></Link>
+                <a onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }} id='Link' className='item' href='/'><label id='labelHeader'>Home</label></a>
+                <a onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' href='about'><label id='labelHeader'>About</label></a>
                 <div id='Link' className="ui item" >
                         <Dropdown 
                         toggleVisibility={toggleVisibility} 
@@ -45,7 +45,8 @@ const Header = () => {
                         options ={options}
                         selected={'Services'}/>
                 </div>
-                <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }} id='Link' className='item' to='contact'><label id="labelHeader">Contact</label></Link>
+                <a onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }} id='Link' className='item' href='reviews'><label id="labelHeader">Reviews</label></a>
+                <a onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }} id='Link' className='item' href='contact'><label id="labelHeader">Contact</label></a>
         </div>
         
         );
@@ -55,11 +56,11 @@ const Header = () => {
         return (
             <div className="ui secondary menu header floating" id="header">
                <a id='Link' className='item' href='/'>
-                    <h2 id='title'>Jeanette M. Johnson Law</h2>
+                    <h2 id='title'>Build Outdoors Space</h2>
                 </a>
                 <i id="menu-icon" className="fa fa-close" onClick={()=> {toggleVisibility(!visibility)}}></i>
-                <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' to='/'><label id='labelHeader'>Home</label></Link>
-                <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' to='about'><label id='labelHeader'>About</label></Link>
+                <a onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' href='/'><label id='labelHeader'>Home</label></a>
+                <a onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}  id='Link' className='item' href='about'><label id='labelHeader'>About</label></a>
                 <div id='Link' className="ui item" >
                         <Dropdown 
                         toggleVisibility={toggleVisibility} 
@@ -68,7 +69,8 @@ const Header = () => {
                         options ={options}
                         selected={'Services'}/>
                 </div>
-                <Link onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }} id='Link' className='item' to='contact'><label id="labelHeader">Contact</label></Link>
+                <a onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }} id='Link' className='item' href='reviews'><label id="labelHeader">Reviews</label></a>
+                <a onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }} id='Link' className='item' href='contact'><label id="labelHeader">Contact</label></a>
         </div>
         
         );
@@ -78,10 +80,11 @@ const Header = () => {
         return (
             <div className="ui secondary menu header floating" id="header">
                 <a id='Link' className='item' href='/'>
-                    <h2 id='title'>Amanda K. Clark Law</h2>
+                    <h2 id='title'>Build Outdoors Space</h2>
                 </a>
-                <i id="menu-icon" className="fa fa-bars" onClick={()=> {toggleVisibility(!visibility)}}></i>
+                <i id="menu-icon" style={{marginTop:'-vh'}} className="fa fa-bars" onClick={()=> {toggleVisibility(!visibility)}}></i>
             </div>
+        
         );
     }
 

@@ -1,5 +1,5 @@
-#probates {
-    background-image: url('https://images.unsplash.com/photo-1528752477378-485b46bedcde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80');
+#outdoorKitchens {
+    background-image: url('https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     height: 75vh;
     background-position: center;
     background-size: cover; 
@@ -8,7 +8,7 @@
     margin-top: 5vh;
     padding-bottom: 3vh;
 }
-#probates-text-content {
+#outdoorKitchens-text-content {
     margin-left: 10vh;
     margin-right: 18vh;
     margin-bottom: 10vh;
@@ -16,11 +16,11 @@
 }
 
 @media (max-width:700px) {
-    #probates {
+    #outdoorKitchens {
         height: 60vh;
     }
 
-    #probates-text-content {
+    #outdoorKitchens-text-content {
         margin-left: 10vh;
         margin-right: 10vh;
     }

@@ -13,32 +13,27 @@ const Footer = () => {
         <footer className="ui segment center aligned two column grid" id="footer">
             <div className="column" id="left-column">   
                 <h3>LOCATION:</h3>
-                <p>1348 Dale Avenue, Tacoma, WA 98402</p>
+                <p>1707 Green Mountain Rd, Woodland, WA, 98674</p>
                 <div id="map" ></div>
             </div>
             
             <div className="column" id="right-column"> 
                 <h3>CONTACT:</h3>
                 <h5>Phone:</h5> 
-                <p>(253)732-3090</p>
-                <h5>Fax:</h5> 
-                <p>(253)732-3191</p>
+                <a href="tel:PHONE_NUM"> (360) 907-1509 </a>
                 <h5>Email:</h5> 
-                <p>wewillfightforyou@email.com</p>
+                <p>buildoutdoorsspace@gmail.com</p>
             </div>
             
             <div id='footer-specs' className="ui two column grid text align center">
                 <div className="column" id="left-column text alrign center">
                     <a href='/' >
-                        <h4 id ="footer-text" className="ui item header">Jeanette M. Johnson Law</h4>
+                        <h4 id ="footer-text" className="ui item header">Build Outdoors Space</h4>
                     </a>
                     <h5 id ="footer-text">All Rights Reserved</h5>
                 </div>
 
                 <div className="ui text align center" id="lower-footer">
-                    <a href="privacypolicy" className='item' id ="footer-text">Privacy Policy</a>
-                    ||
-                    <a className='item' href='disclaimer' id ="footer-text">Disclaimer</a>
                 </div>
 
             </div>

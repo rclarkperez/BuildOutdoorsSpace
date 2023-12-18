@@ -27,11 +27,11 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId, 
             return (
                 <div className="item" 
                 key ={option.label}>
-                    <Link className='item' 
+                    <a className='item' 
                     onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}
-                    to={`${option.label}`}>
+                    href={`${option.label}`}>
                     {option.label}
-                    </Link>
+                    </a>
                 </div>
         
     )});

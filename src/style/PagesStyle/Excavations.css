@@ -1,25 +1,25 @@
-#guardianships {
-    background-image: url('https://images.unsplash.com/photo-1526225294770-079fcbe68745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+#excavations {
+    background-image: url('https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     height: 75vh;
     background-position: center;
     background-size: cover;
 }
-#guardianships-banner {
+#excavations-banner {
     padding-bottom: 5vh;
     margin-top: 5vh;
 }
-#guardianships-text-content {
+#excavations-text-content {
     margin-left: 10vh;
     margin-right: 18vh;
     margin-bottom: 10vh;
 }
 
 @media (max-width:700px) {
-    #guardianships {
+    #excavations {
         height: 60vh;
     }
 
-    #guardianships-text-content {
+    #excavations-text-content {
         margin-left: 10vh;
         margin-right: 10vh;
     }
