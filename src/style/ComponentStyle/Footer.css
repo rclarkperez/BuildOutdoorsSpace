@@ -35,9 +35,10 @@
         flex-basis: 100%;
     }
     #map {
+        height: 30vh;
         width: 50vh;
-        margin-top: 6%;
-        margin-left: 12%;
+        margin-left: 8%;
+        margin-top: 5%;
         z-index: 1;
     }
     #left-column {
