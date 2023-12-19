@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="column" id="right-column"> 
                 <h3>CONTACT:</h3>
                 <h5>Phone:</h5> 
-                <a href="tel:PHONE_NUM"> (360) 907-1509 </a>
+                <a href="tel:(360) 907-1509"> (360) 907-1509 </a>
                 <h5>Email:</h5> 
                 <p>buildoutdoorsspace@gmail.com</p>
             </div>

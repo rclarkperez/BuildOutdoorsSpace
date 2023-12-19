@@ -40,7 +40,7 @@ const Excavations = () => {
                 and prepared for the construction process, providing you with peace of mind and a solid base for your dream home.
                 </p>
                 <b>Contact Us for a Personalized Consultation! 
-                <a href="tel:PHONE_NUM"> (360) 907-1509 </a>
+                <a href="tel:(360) 907-1509"> (360) 907-1509 </a>
                 </b>
 
             </div>
