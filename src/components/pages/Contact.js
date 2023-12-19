@@ -244,12 +244,11 @@ const Contact = ({ loaderToggle }) => {
 
             <div className="ui field required">
                 <label>Project Details:</label>
-                <textarea 
-                style={{width: '100vh'}}
-
-                 value={values.message} 
-                 name="message"
-                 onChange={onMessageChange} 
+                <textarea
+                id="project-details" 
+                value={values.message} 
+                name="message"
+                onChange={onMessageChange} 
                 //  placeholder={'It all started...'}
                  required
                 ></textarea>
