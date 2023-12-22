@@ -40,23 +40,21 @@
         margin-bottom: 0vh;
         margin-left: 0vh;
     }
-    #about-photo {
+    /* #about-photo {
         margin-bottom: 0vh;
         margin-left: 10vh;
         margin-right: 10vh;
-    }
+    } */
     #about-banner-text {
-        padding-bottom: 3vh;
+        padding-bottom: 2vh;
         margin-top: 5vh;
         font-size: 30px;
     }
     #about-text-content {
         margin-left: -3vh;
         margin-right: 10vh;
-        margin-bottom: 10vh;
+        margin-bottom: 20vh;
         text-align: center;
-
-
     }
 
     #about-background {
