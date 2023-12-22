@@ -12,7 +12,7 @@ const About = () => {
                     </div>
                     <p className="b">
                         With over a decade of experience, Alex Kulchitskiy and his dedicated family bring 
-                        invaluable expertise to the construction industry in the Portland, Oregon Area. 
+                        invaluable expertise to the construction industry in Southwest Washington. 
                         Specializing in top-tier excavation services
                         and outdoor kitchen remodels, his family business has fostered a reputation for excellence. 
                         Meticulous craftsmanship and personalized solutions define every project, showing an unwavering 
