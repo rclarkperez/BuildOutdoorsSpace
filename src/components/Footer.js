@@ -13,7 +13,7 @@ const Footer = () => {
         <footer className="ui segment center aligned two column grid" id="footer">
             <div className="column" id="left-column">   
                 <h3 id="contact-text">LOCATION:</h3>
-                <p id="contact-text">1707 Green Mountain Rd, Woodland, WA, 98674</p>
+                <p id="contact-text">7107 Green Mountain Rd, Woodland, WA, 98674</p>
                 <div id="map" ></div>
             </div>
             

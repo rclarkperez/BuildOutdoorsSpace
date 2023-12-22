@@ -46,13 +46,16 @@
         margin-right: 10vh;
     }
     #about-banner-text {
-       padding-left: 5vh;
-       text-align: center;
+        padding-bottom: 5vh;
+        margin-top: 5vh;
+        font-size: 30px;
     }
     #about-text-content {
         margin-left: -3vh;
         margin-right: 10vh;
         padding-bottom: 0vh;
+        text-align: center;
+
 
     }
 
