@@ -7,11 +7,13 @@
 #excavations-banner {
     padding-bottom: 5vh;
     margin-top: 5vh;
+    font-size: 30px;
 }
 #excavations-text-content {
     margin-left: 10vh;
     margin-right: 18vh;
     margin-bottom: 10vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width:700px) {

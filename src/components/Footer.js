@@ -12,17 +12,17 @@ const Footer = () => {
     return (
         <footer className="ui segment center aligned two column grid" id="footer">
             <div className="column" id="left-column">   
-                <h3>LOCATION:</h3>
-                <p>1707 Green Mountain Rd, Woodland, WA, 98674</p>
+                <h3 id="contact-text">LOCATION:</h3>
+                <p id="contact-text">1707 Green Mountain Rd, Woodland, WA, 98674</p>
                 <div id="map" ></div>
             </div>
             
             <div className="column" id="right-column"> 
-                <h3>CONTACT:</h3>
-                <h5>Phone:</h5> 
-                <a href="tel:(360) 907-1509"> (360) 907-1509 </a>
-                <h5>Email:</h5> 
-                <p>buildoutdoorsspace@gmail.com</p>
+                <h3 id="contact-text">CONTACT:</h3>
+                <h5 id="contact-text">Phone:</h5> 
+                <a id="contact-text" href="tel:(360) 907-1509"> (360) 907-1509 </a>
+                <h5 id="contact-text">Email:</h5> 
+                <p id="contact-text">buildoutdoorsspace@gmail.com</p>
             </div>
             
             <div id='footer-specs' className="ui two column grid text align center">

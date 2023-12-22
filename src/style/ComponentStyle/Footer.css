@@ -12,9 +12,14 @@
 }
 #footer-text {
     color: white;
+    font-family: 'Roboto', sans-serif;
+
 }
 #footer-text:hover {
     color: #b5651d;
+}
+#contact-text{
+    font-family: 'Roboto', sans-serif;
 }
 #map {
     height: 30vh;
@@ -24,6 +29,8 @@
 }
 #lower-footer {
     height:5%;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 @media (max-width:700px) {

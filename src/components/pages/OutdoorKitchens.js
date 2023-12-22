@@ -6,7 +6,7 @@ const OutdoorKitchens = () => {
         <div>    
             <div id="outdoorKitchens"></div>
             <div className="ui">
-                <h2 id="probabates-banner" className="ui center aligned container">Outdoor Kitchens</h2>
+                <h2 id="outdoorKitchens-banner" className="ui center aligned container">Outdoor Kitchens</h2>
             </div>
             <br/>
             <div className="ui" id="outdoorKitchens-text-content">

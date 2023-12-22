@@ -1,10 +1,12 @@
 #labelHeader {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-size:large;
 }
 #title {
     margin-top: 1%;
     margin-left: 3vh;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 #pages {
