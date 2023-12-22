@@ -13,7 +13,7 @@ const Excavations = () => {
             <div className="ui" id="excavations-text-content">                
                 <h2> Residential Escavation</h2>
                 <p className="b">
-                At Build Outdoors Space, we understand the importance of a solid foundation for every residential project. 
+                At Build Outdoors Space Solutions LLC, we understand the importance of a solid foundation for every residential project. 
                 
                 From small-scale home renovations to large custom builds, our skilled team is equipped to handle various 
                 

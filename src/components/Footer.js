@@ -28,7 +28,7 @@ const Footer = () => {
             <div id='footer-specs' className="ui two column grid text align center">
                 <div className="column" id="left-column text alrign center">
                     <a href='/' >
-                        <h4 id ="footer-text" className="ui item header">Build Outdoors Space</h4>
+                        <h4 id ="footer-text" className="ui item header">BUILD OUTDOOR SPACE SOLUTIONS LLC</h4>
                     </a>
                     <h5 id ="footer-text">All Rights Reserved</h5>
                 </div>
