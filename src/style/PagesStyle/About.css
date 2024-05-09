@@ -17,7 +17,7 @@
     width: 50vh;
     background-position: center;
     background-size: cover;
-    margin-left: 18vh;
+    margin-left: 8vh;
     margin-top: 9vh;
     margin-bottom: 10vh;
 
@@ -40,11 +40,12 @@
         margin-bottom: 0vh;
         margin-left: 0vh;
     }
-    /* #about-photo {
-        margin-bottom: 0vh;
-        margin-left: 10vh;
-        margin-right: 10vh;
-    } */
+    #about-photo {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100;
+    }
     #about-banner-text {
         padding-bottom: 2vh;
         margin-top: 5vh;
@@ -53,7 +54,7 @@
     #about-text-content {
         margin-left: -3vh;
         margin-right: 10vh;
-        margin-bottom: 70%;
+        margin-bottom: 60%;
         text-align: center;
     }
 
