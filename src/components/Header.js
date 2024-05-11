@@ -106,7 +106,19 @@ const Header = () => {
     return (
       <div className="ui secondary menu header floating" id="header">
         <a id="Link" className="item" href="/">
-          <h2 id="title">BUILD OUTDOOR SPACE SOLUTIONS LLC</h2>
+          {/* <h2 id="title">BUILD OUTDOOR SPACE SOLUTIONS LLC</h2> */}
+          <img
+            id="header-img"
+            style={{
+              height: 150,
+              width: 260,
+              marginBottom: -20,
+              paddingRight: 15,
+              paddingBottom: 20,
+            }}
+            src={logo}
+            alt="My logo"
+          />
         </a>
         <i
           id="menu-icon"
@@ -180,7 +192,19 @@ const Header = () => {
     return (
       <div className="ui secondary menu header floating" id="header">
         <a id="Link" className="item" href="/">
-          <h2 id="title">BUILD OUTDOOR SPACE SOLUTIONS LLC</h2>
+          {/* <h2 id="title">BUILD OUTDOOR SPACE SOLUTIONS LLC</h2> */}
+          <img
+            id="header-img"
+            style={{
+              height: 150,
+              width: 260,
+              marginBottom: -20,
+              paddingRight: 15,
+              paddingBottom: 20,
+            }}
+            src={logo}
+            alt="My logo"
+          />
         </a>
         <i
           id="menu-icon"
