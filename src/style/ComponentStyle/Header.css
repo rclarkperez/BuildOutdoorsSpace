@@ -8,7 +8,9 @@
     font-family: 'Roboto', sans-serif;
 
 }
-
+#header-img {
+    margin-top: -5%;
+}
 #pages {
     margin-left: 3%;
 }
@@ -25,6 +27,7 @@
 
 @media (max-width:700px) {
     #header {
+        margin-top: 0%;
         display: flex;
         flex-wrap: wrap;
     }
@@ -34,10 +37,18 @@
     #title {
         margin-left: 1vh;
     }
+    #header-img {
+        height: 120;
+        width: 230;
+        margin-top: -1%;
 
+
+    }
     #menu-icon {
        margin-left: 5vh;
-       margin-bottom: 3vh;
+       margin-bottom: 1vh;
+       margin-top: -2%;
+
     }
    
 }
