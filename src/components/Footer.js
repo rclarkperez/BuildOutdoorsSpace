@@ -30,12 +30,7 @@ const Footer = () => {
       <div id="footer-specs" className="ui two column grid text align center">
         <div className="column" id="left-column text alrign center">
           <a href="/">
-            <img
-              id="footer-img"
-              style={{ height: 110, width: 370 }}
-              src={logo}
-              alt="My logo"
-            />
+            <img id="footer-img" src={logo} alt="My logo" />
           </a>
           <h5 id="footer-text">All Rights Reserved</h5>
         </div>
