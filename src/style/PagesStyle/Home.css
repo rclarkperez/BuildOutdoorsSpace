@@ -3,13 +3,15 @@
     linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ),url("../../photos/Excavator\ Water.jpg");
+    ),url("../../photos/Big\ Excavator.jpg");
     height: 80vh;
     background-position: center;
     background-size: cover;
     margin-bottom: -3vh;
 }
-
+#text-box {
+    padding-top:25vh;
+}
 #text {
     color: white;
     font-family: 'Roboto', sans-serif;

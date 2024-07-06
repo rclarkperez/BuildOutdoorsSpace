@@ -14,25 +14,25 @@ const About = () => {
             </h1>
           </div>
           <p className="b">
-            With over a decade of experience, Alex Kulchitskiy and his dedicated
-            family bring invaluable expertise to the construction industry in
-            Southwest Washington. Specializing in top-tier excavation services
-            and outdoor kitchen remodels, his family business has fostered a
-            reputation for excellence. Meticulous craftsmanship and personalized
-            solutions define every project, showing an unwavering commitment to
-            quality and customer satisfaction.
+            Alex Kulchitskiy grew up near the small city of Pervomais'k,
+            Ukraine. Over twenty years ago, Alex and his family had the
+            opportunity to move to the United States and have been living in the
+            South West Washington area ever since.
+          </p>
+          <p className="b">
+            Alex has spent over two decades in the construction industry, with
+            the past five years focusing on excavation work. Build Outdoor Space
+            Solutions (B.O.S.S.) is his company and specializes in excavation
+            work such as property/backyard clearing, sewage, retaining walls,
+            rain drainage as well as outdoor kitchens.
+          </p>
+          <p className="b">
+            Alex lives in Woodland, WA with his wife Olga, their children and
+            Vizla Jaxson. When not working, Alex spends his time with family and
+            helping his local church community assist Ukrainian refugees adapt
+            to life in the United States.
           </p>
           <br />
-          <p className="b">
-            The family team combines technical skills with a creative vision,
-            transforming outdoor spaces into captivating and functional
-            environments. From ground-breaking excavation work to seamless
-            integration of custom outdoor kitchen installations, their
-            dedication to precision and artistry remains the cornerstone of
-            their esteemed service. Your outdoor project is not just a job to
-            them—it's a passion, a commitment to transforming spaces into
-            something extraordinary.
-          </p>
         </div>
       </div>
     </div>
