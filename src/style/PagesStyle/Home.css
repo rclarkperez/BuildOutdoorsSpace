@@ -23,6 +23,9 @@
     #home {
         height: 60vh;
     }
+    #text-box {
+        padding-top:10vh;
+    }
     #text {
         padding-top: 3vh;
         font-size: 21px;
