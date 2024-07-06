@@ -1,16 +1,16 @@
 import React from "react";
 import "../../style/PagesStyle/About.css";
-import logo from "../../photos/Alex About.jpeg";
+import about from "../../photos/Alex About.jpeg";
 //
 const About = () => {
   return (
     <div className="ui center aligned" id="about">
       <div id="grid" className="ui center two column grid">
-        <img id="about-photo" style={{ width: 570 }} src={logo} alt="My logo" />
+        <img id="about-photo" src={about} alt="My logo" />
         <div id="about-text-content" className="ui column text align center">
           <div id="about-banner">
             <h1 id="about-banner-text" className="ui container">
-              Alex Kulchitskiy{" "}
+              Alex Kulchitskiy
             </h1>
           </div>
           <p className="b">
