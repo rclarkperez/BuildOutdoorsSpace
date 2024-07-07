@@ -6,8 +6,8 @@ const Home = () => {
     <div id="home">
       <div className="ui center aligned container" id="text-box">
         <h1 id="text" className="ui center aligned container">
-          Specializing in Excavations, Demolitions, Land Clearing, Sewage,
-          Retaining Walls, Rain Drain and More
+          Excavations, Demolitions, Land Clearing, Sewage, Retaining Walls and
+          More!
         </h1>
         <h2 id="text" className="ui center aligned container">
           Call for a personalized consultation!
