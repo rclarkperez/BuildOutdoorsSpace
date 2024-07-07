@@ -17,14 +17,14 @@ const About = () => {
             Alex Kulchitskiy grew up near the small city of Pervomais'k,
             Ukraine. Over twenty years ago, Alex and his family had the
             opportunity to move to the United States and have been living in the
-            South West Washington area ever since.
+            SW Washington area ever since.
           </p>
           <p className="b">
             Alex has spent over two decades in the construction industry, with
             the past five years focusing on excavation work. Build Outdoor Space
             Solutions (B.O.S.S.) is his company and specializes in excavation
-            work such as property/backyard clearing, sewage, retaining walls,
-            rain drainage as well as outdoor kitchens.
+            work such as property/backyard clearing, sewage, demolition,
+            retaining walls, rain drainage as well as outdoor kitchens.
           </p>
           <p className="b">
             Alex lives in Woodland, WA with his wife Olga, their children and
