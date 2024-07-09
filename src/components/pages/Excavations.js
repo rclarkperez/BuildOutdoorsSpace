@@ -13,7 +13,7 @@ const Excavations = () => {
         </div>
       </div>
       <div className="ui" id="excavations-text-content">
-        <h2> Residential Escavation</h2>
+        <h2> Residential Excavation</h2>
         <p className="b">
           At Build Outdoors Space Solutions LLC, we understand the importance of
           a solid foundation for every residential project. We specialize in
