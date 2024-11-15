@@ -15,7 +15,8 @@ const OutdoorKitchens = () => {
         <p className="b">
           Let us help you create the ideal environment for outdoor cooking. In
           addition to our main services around excavation, we do also specialize
-          in work for outdoor kitchen remodels.
+          in work for outdoor kitchen remodels. If you are interested, ask us
+          for more details!
         </p>
         <p className="b">
           <b>
