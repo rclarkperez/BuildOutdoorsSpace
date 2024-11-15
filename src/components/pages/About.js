@@ -28,10 +28,10 @@ const About = () => {
             outdoor kitchens.
           </p>
           <p className="b">
-            Alex lives in Woodland, WA with his wife Olga, their children and
-            beloved Vizla, Jax. When not working, Alex spends his time with
-            family and helping his local church community assist Ukrainian
-            refugees adapt to life in the United States.
+            Alex lives in Woodland, WA with his wife of nearly thirty years, and
+            their children. When not working, Alex spends his time with family
+            and helping his local church community assist Ukrainian refugees
+            adapt to life in the United States.
           </p>
           <br />
         </div>
