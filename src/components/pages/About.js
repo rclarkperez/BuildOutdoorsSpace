@@ -16,20 +16,22 @@ const About = () => {
           <p className="b">
             Alex Kulchitskiy grew up near the small city of Pervomais'k,
             Ukraine. Over twenty years ago, Alex and his family had the
-            opportunity to move to the United States and have been living in the
+            opportunity to move to the United States and have been living in
             Southwest Washington ever since.
           </p>
           <p className="b">
-            Alex has over two decades of experience in the construction industry, and has focused on excavation for the last five years.
-            Build Outdoor Space Solutions (B.O.S.S.) is his company and specializes in excavation
-            work such as property/backyard clearing, sewage, demolition,
-            retaining walls, rain drainage as well as outdoor kitchens.
+            Alex has over two decades of experience in the construction
+            industry, and has focused on excavation for the last five years.
+            Build Outdoor Space Solutions (B.O.S.S.) is his company and
+            specializes in excavation work such as property/backyard clearing,
+            sewage, demolition, retaining walls, rain drainage as well as
+            outdoor kitchens.
           </p>
           <p className="b">
             Alex lives in Woodland, WA with his wife Olga, their children and
-            beloved Vizla, Jax. When not working, Alex spends his time with family and
-            helping his local church community assist Ukrainian refugees adapt
-            to life in the United States.
+            beloved Vizla, Jax. When not working, Alex spends his time with
+            family and helping his local church community assist Ukrainian
+            refugees adapt to life in the United States.
           </p>
           <br />
         </div>
