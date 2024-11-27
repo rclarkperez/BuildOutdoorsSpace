@@ -38,7 +38,7 @@ const App = () => {
               element={<Contact loaderToggle={loaderToggle} />}
             />
             <Route exact path="/excavations" element={<Excavations />} />
-            <Route exact path="/Kitchens" element={<OutdoorKitchens />} />
+            <Route exact path="/Outdoor Kitchens" element={<OutdoorKitchens />} />
             <Route exact path="/*" element={<NotFound />} />
             <Route exact path="/submission" element={<Submission />} />
             <Route exact path="/*" element={<NotFound />} />

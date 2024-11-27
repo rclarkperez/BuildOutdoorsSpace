@@ -6,13 +6,14 @@ import logo from "../photos/Cropped Logo.jpg";
 
 const options = [
   {
-    label: "Kitchens",
-    address: "/outdoorKitchens",
-  },
-  {
     label: "Excavations",
     address: "/excavations",
   },
+  {
+    label: "Outdoor Kitchens",
+    address: "/outdoorKitchens",
+  }
+
 ];
 
 const Header = () => {
