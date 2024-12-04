@@ -1,10 +1,10 @@
 #review-photo {
   background-position: center;
-  margin-left: 1vh;
-  margin-top: 5vh;
+  margin-left: -3vh;
+  /* margin-top: 5vh; */
   margin-bottom: 5vh;
-  height: 60%;
-  width: 80%;
+  height: 100%;
+  width: 104%;
   display: "flex";
   align-items: "center";
 }

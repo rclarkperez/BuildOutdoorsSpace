@@ -7,7 +7,7 @@ import "../../style/PagesStyle/Reviews.css";
 const Reviews = () => {
   const divStyle = {
     fontFamily: "Arial, sans-serif",
-    padding: "20px",
+    // padding: "20px",
   };
 
   const titleStyle = {
@@ -16,10 +16,10 @@ const Reviews = () => {
   };
 
   const liStyle = {
-    margin: "10px 0",
-    padding: "10px",
-    border: "1px solid #ddd",
-    borderRadius: "5px",
+    // margin: "10px 0",
+    // padding: "10px",
+    // border: "1px solid #ddd",
+    // borderRadius: "5px",
     display: "flex",
     alignItems: "center",
   };
@@ -64,7 +64,6 @@ const Reviews = () => {
     <div style={divStyle}>
       <br />
       <h1 style={titleStyle}>Customer Reviews</h1>
-      <br />
       <br />
       <div>
         <ul>{renderReviews()}</ul>
