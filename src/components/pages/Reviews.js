@@ -1,4 +1,8 @@
 import React from "react";
+import reviewOne from "../../photos/Review 1.jpg";
+import reviewTwo from "../../photos/Review 2.jpg";
+import reviewThree from "../../photos/Review 3.jpg";
+import "../../style/PagesStyle/Reviews.css";
 
 const Reviews = () => {
   const divStyle = {
@@ -11,11 +15,6 @@ const Reviews = () => {
     color: "#333",
   };
 
-  const headingStyle = {
-    marginLeft: "50px",
-    color: "#555",
-  };
-
   const liStyle = {
     margin: "10px 0",
     padding: "10px",
@@ -25,84 +24,51 @@ const Reviews = () => {
     alignItems: "center",
   };
 
-  const ratingStyle = {
-    marginLeft: "10px",
-    display: "flex",
-    alignItems: "center",
-  };
+  // return reviewList.map((item, index) => (
+  //   <li key={index} style={liStyle}>
+  //     "{item.review}" - {item.reviewer}
+  //     <div style={ratingStyle}>
+  //       <img src={reviewOne} alt="Review 1" />
 
-  const starStyle = {
-    color: "gold",
-  };
-
-  const reviewList = [
-    {
-      review: "Excellent work on our outdoor kitchen! Highly recommended!",
-      reviewer: "John Doe",
-    },
-    {
-      review: "Amazing craftsmanship and attention to detail. Very satisfied!",
-      reviewer: "Jane Smith",
-    },
-    {
-      review:
-        "Professional and efficient service for our commercial excavation needs!",
-      reviewer: "David Johnson",
-    },
-    {
-      review:
-        "Highly skilled team for our residential excavation project. Great job!",
-      reviewer: "Sarah Williams",
-    },
-    {
-      review:
-        "Exemplary work on our excavation. Timely and precise. Highly recommended!",
-      reviewer: "Michael Brown",
-    },
-  ];
-
+  //       <span style={starStyle}>&#9733;</span>
+  //       <span style={starStyle}>&#9733;</span>
+  //       <span style={starStyle}>&#9733;</span>
+  //       <span style={starStyle}>&#9733;</span>
+  //       <span style={starStyle}>&#9733;</span>
+  //     </div>
+  //   </li>
+  // ));
   const renderReviews = () => {
-    return reviewList.map((item, index) => (
-      <li key={index} style={liStyle}>
-        "{item.review}" - {item.reviewer}
-        <div style={ratingStyle}>
-          <span style={starStyle}>&#9733;</span>
-          <span style={starStyle}>&#9733;</span>
-          <span style={starStyle}>&#9733;</span>
-          <span style={starStyle}>&#9733;</span>
-          <span style={starStyle}>&#9733;</span>
-        </div>
-      </li>
-    ));
+    return (
+      <div>
+        <li style={liStyle}>
+          <div>
+            <img id="review-photo" src={reviewOne} alt="Review 1" />
+          </div>
+        </li>
+        <li style={liStyle}>
+          <div>
+            <img id="review-photo" src={reviewTwo} alt="Review 2" />
+          </div>
+        </li>
+        <li style={liStyle}>
+          <div>
+            <img id="review-photo" src={reviewThree} alt="Review 3" />
+          </div>
+        </li>
+      </div>
+    );
   };
 
   return (
     <div style={divStyle}>
-      <h2 style={titleStyle}>Customer Review Page Coming Soon!</h2>
+      <br />
+      <h1 style={titleStyle}>Customer Reviews</h1>
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      {/* <div>
-                <h3 style={headingStyle}>Outdoor Kitchen Reviews</h3>
-                <ul>{renderReviews().slice(0, 2)}</ul>
-            </div>
-
-            <div>
-                <h3 style={headingStyle}>Excavation Reviews</h3>
-                <ul>{renderReviews().slice(2)}</ul>
-            </div> */}
+      <div>
+        <ul>{renderReviews()}</ul>
+      </div>
     </div>
   );
 };
