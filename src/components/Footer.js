@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Map from "./Map";
 import "../style/ComponentStyle/Footer.css";
 import logo from "../photos/Dark Logo.jpg";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 const Footer = () => {
   useEffect(() => {
@@ -25,6 +26,13 @@ const Footer = () => {
         </a>
         <h5 id="contact-text">Email:</h5>
         <p id="contact-text">buildoutdoorsspace@gmail.com</p>
+        <h5 id="contact-text">Find us on Facebook!</h5>
+        <a
+          target="blank"
+          href="https://www.facebook.com/people/Build-Outdoor-Space-Solutions-LLC/100090722932486/"
+        >
+          <FacebookIcon />
+        </a>
       </div>
 
       <div id="footer-specs" className="ui two column grid text align center">

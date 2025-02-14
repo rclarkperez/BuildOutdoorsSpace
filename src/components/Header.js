@@ -9,10 +9,10 @@ const options = [
     label: "Excavations",
     address: "/excavations",
   },
-  {
-    label: "Outdoor Kitchens",
-    address: "/outdoorKitchens",
-  }
+  // {
+  //   label: "Outdoor Kitchens",
+  //   address: "/outdoorKitchens",
+  // }
 
 ];
 
@@ -41,7 +41,6 @@ const Header = () => {
             alt="My logo"
           />
 
-          {/* <h2 id='title'>BUILD OUTDOOR SPACE SOLUTIONS LLC</h2> */}
         </a>
         <a
           onClick={() => {
@@ -67,14 +66,26 @@ const Header = () => {
         >
           <label id="labelHeader">About</label>
         </a>
-        <div id="Link" className="ui item">
+        {/* <div id="Link" className="ui item">
           <Dropdown
             toggleVisibility={toggleVisibility}
             labelId={"labelHeader"}
             options={options}
             selected={"Services"}
           />
-        </div>
+        </div> */}
+                <a
+          onClick={() => {
+            window.matchMedia("(max-width: 700px)").matches
+              ? toggleVisibility(false)
+              : toggleVisibility(true);
+          }}
+          id="Link"
+          className="item"
+          href="Excavations"
+        >
+          <label id="labelHeader">Services</label>
+        </a>
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches

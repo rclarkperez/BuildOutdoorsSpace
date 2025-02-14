@@ -5,7 +5,6 @@ import Contact from "./components/pages/Contact";
 import Home from "./components/pages/Home";
 import NotFound from "./components/pages/PageNotFound";
 import Excavations from "./components/pages/Excavations";
-import OutdoorKitchens from "./components/pages/OutdoorKitchens";
 import Footer from "./components/Footer";
 import Submission from "./components/pages/Submission";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -38,7 +37,6 @@ const App = () => {
               element={<Contact loaderToggle={loaderToggle} />}
             />
             <Route exact path="/excavations" element={<Excavations />} />
-            <Route exact path="/Outdoor Kitchens" element={<OutdoorKitchens />} />
             <Route exact path="/*" element={<NotFound />} />
             <Route exact path="/submission" element={<Submission />} />
             <Route exact path="/*" element={<NotFound />} />

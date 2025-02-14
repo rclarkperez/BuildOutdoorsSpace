@@ -13,25 +13,22 @@ const About = () => {
               Alex Kulchitskiy
             </h1>
           </div>
-          <p className="b">
-            Alex Kulchitskiy grew up near the small city of Pervomais'k,
-            Ukraine. Over twenty years ago, Alex and his family had the
-            opportunity to move to the United States and have been living in
-            Southwest Washington ever since.
+          <p className="b" font="Roboto">
+            Build Outdoor Space Solutions is a staple in Southwest Washington
+            offering top of the line excavation services. We specialize in
+            demolitions, sewer repair and installations, property clearing, rain
+            drainage and retaining walls.
           </p>
-          <p className="b">
-            Alex has over two decades of experience in the construction
-            industry, and has focused on excavation for the last five years.
-            Build Outdoor Space Solutions (B.O.S.S.) is his company and
-            specializes in excavation work such as property/backyard clearing,
-            sewage, demolition, retaining walls, rain drainage as well as
-            outdoor kitchens.
+
+          <p className="b" font="Roboto">
+            Call today for a complimentary estimate - service is our top
+            priority!
           </p>
-          <p className="b">
-            Alex lives in Woodland, WA with his wife of nearly thirty years, and
-            their children. When not working, Alex spends his time with family
-            and helping his local church community assist Ukrainian refugees
-            adapt to life in the United States.
+          <p className="b" font="Roboto">
+            <a id="contact-text" href="tel:(360) 907-1509">
+              {" "}
+              (360) 907-1509{" "}
+            </a>
           </p>
           <br />
         </div>
