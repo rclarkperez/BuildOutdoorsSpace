@@ -19,17 +19,12 @@ const About = () => {
             demolitions, sewer repair and installations, property clearing, rain
             drainage and retaining walls.
           </p>
-
-          <p className="b" font="Roboto">
+          <b>
             Call today for a complimentary estimate - service is our top
             priority!
-          </p>
-          <p className="b" font="Roboto">
-            <a id="contact-text" href="tel:(360) 907-1509">
-              {" "}
-              (360) 907-1509{" "}
-            </a>
-          </p>
+            <br />
+            <a href="tel:(360) 907-1509"> (360) 907-1509 </a>
+          </b>
           <br />
         </div>
       </div>
