@@ -167,6 +167,7 @@ const Contact = ({ çƒ }) => {
         <div ref={ref} className="field ui form required">
           <label>State</label>
           <select
+            id="select-drop-down"
             name="State"
             style={{ width: "50vh" }}
             value={values.State}
@@ -187,6 +188,7 @@ const Contact = ({ çƒ }) => {
         <div ref={ref} className="field ui form required">
           <label>Are you a new Client?</label>
           <select
+            id="select-drop-down"
             name="New"
             value={values.New}
             style={{ width: "50vh" }}

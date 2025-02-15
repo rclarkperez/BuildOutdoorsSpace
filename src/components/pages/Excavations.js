@@ -26,7 +26,7 @@ const Excavations = () => {
           home.
         </p>
         <b>
-          Contact Us for a free estimate!
+          Contact us for a free estimate!
           <a href="tel:(360) 907-1509"> (360) 907-1509 </a>
         </b>
       </div>
