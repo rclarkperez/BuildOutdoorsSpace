@@ -31,7 +31,7 @@ const Footer = () => {
           target="blank"
           href="https://www.facebook.com/people/Build-Outdoor-Space-Solutions-LLC/100090722932486/"
         >
-          <FacebookIcon />
+          <FacebookIcon fontSize="large" />
         </a>
       </div>
 
