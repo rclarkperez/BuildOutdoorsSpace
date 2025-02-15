@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Dropdown from "./Dropdown";
+// import Dropdown from "./Dropdown";
 import "../style/ComponentStyle/Header.css";
 import logo from "../photos/Cropped Logo.jpg";
 
@@ -42,6 +42,7 @@ const Header = () => {
           />
 
         </a>
+
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -54,6 +55,7 @@ const Header = () => {
         >
           <label id="labelHeader">Home</label>
         </a>
+
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -66,15 +68,8 @@ const Header = () => {
         >
           <label id="labelHeader">About</label>
         </a>
-        {/* <div id="Link" className="ui item">
-          <Dropdown
-            toggleVisibility={toggleVisibility}
-            labelId={"labelHeader"}
-            options={options}
-            selected={"Services"}
-          />
-        </div> */}
-                <a
+        
+        <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
               ? toggleVisibility(false)
@@ -86,6 +81,7 @@ const Header = () => {
         >
           <label id="labelHeader">Services</label>
         </a>
+
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -98,6 +94,7 @@ const Header = () => {
         >
           <label id="labelHeader">Reviews</label>
         </a>
+        
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -118,7 +115,6 @@ const Header = () => {
     return (
       <div className="ui secondary menu header floating" id="header">
         <a id="Link" className="item" href="/">
-          {/* <h2 id="title">BUILD OUTDOOR SPACE SOLUTIONS LLC</h2> */}
           <img
             id="header-img"
             style={{
@@ -139,6 +135,7 @@ const Header = () => {
             toggleVisibility(!visibility);
           }}
         ></i>
+
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -151,6 +148,7 @@ const Header = () => {
         >
           <label id="labelHeader">Home</label>
         </a>
+
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -163,7 +161,8 @@ const Header = () => {
         >
           <label id="labelHeader">About</label>
         </a>
-        <div id="Link" className="ui item">
+
+        {/* <div id="Link" className="ui item">
           <Dropdown
             toggleVisibility={toggleVisibility}
             isHeader={true}
@@ -171,7 +170,20 @@ const Header = () => {
             options={options}
             selected={"Services"}
           />
-        </div>
+        </div> */}
+        <a
+          onClick={() => {
+            window.matchMedia("(max-width: 700px)").matches
+              ? toggleVisibility(false)
+              : toggleVisibility(true);
+          }}
+          id="Link"
+          className="item"
+          href="Excavations"
+        >
+          <label id="labelHeader">Services</label>
+        </a>
+
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -184,6 +196,7 @@ const Header = () => {
         >
           <label id="labelHeader">Reviews</label>
         </a>
+
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -196,6 +209,7 @@ const Header = () => {
         >
           <label id="labelHeader">Contact</label>
         </a>
+
       </div>
     );
   };

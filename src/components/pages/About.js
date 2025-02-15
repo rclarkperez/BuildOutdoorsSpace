@@ -10,18 +10,25 @@ const About = () => {
         <div id="about-text-content" className="ui column text align center">
           <div id="about-banner">
             <h1 id="about-banner-text" className="ui container">
-              Alex Kulchitskiy
+              Build Outdoor Space Solutions
             </h1>
           </div>
-          <p className="b" font="Roboto">
+          <p className="b" id="about-text-body">
             Build Outdoor Space Solutions is a staple in Southwest Washington
             offering top of the line excavation services. We specialize in
             demolitions, sewer repair and installations, property clearing, rain
-            drainage and retaining walls.
+            drainage and retaining walls. When we take on a project, we commit
+            to efficient and effective completion and focus completely on one
+            project at a time.
+          </p>
+
+          <p className="b">
+            The team is led by Alex Kulchitskiy, a seasoned professional with
+            over 20 years of experience in the construction industry. His
+            experience is invaluable in all aspects of a project.
           </p>
           <b>
-            Call today for a complimentary estimate - service is our top
-            priority!
+            Call today for a free estimate!
             <br />
             <a href="tel:(360) 907-1509"> (360) 907-1509 </a>
           </b>

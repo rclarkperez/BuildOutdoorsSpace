@@ -10,7 +10,7 @@ const Home = () => {
           More!
         </h1>
         <h2 id="text" className="ui center aligned container">
-          Call for a personalized consultation!
+          Call today for a free consultation!
         </h2>
         <h3 id="text" className="ui center aligned container">
           <a href="tel:(360) 907-1509"> (360) 907-1509 </a>
