@@ -14,17 +14,16 @@ const About = () => {
             </h1>
           </div>
           <p className="b" id="about-text-body">
-            Build Outdoor Space Solutions is a staple in Southwest Washington
-            offering top of the line excavation services. We specialize in
-            demolitions, sewer repair and installations, property clearing, rain
-            drainage and retaining walls. When we take on a project, we commit
-            to efficient and effective completion and focus completely on one
-            project at a time.
+            Build Outdoor Space Solutions specializes in excavations and serves
+            clients throughout Southwest Washington and the Portland metro area.
+            Specifically, our team has depth of experience in demolitions, sewer
+            repair and installation, property clearing, rain drainage and
+            retaining walls.
           </p>
 
-          <p className="b">
+          <p className="b" id="about-text-body">
             The team is led by Alex Kulchitskiy, a seasoned professional with
-            over 20 years of experience in the construction industry. His
+            over 20 years in the construction industry. Alex's wide breadth of
             experience is invaluable in all aspects of a project.
           </p>
           <b>

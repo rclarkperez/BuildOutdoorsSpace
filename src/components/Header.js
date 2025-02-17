@@ -9,11 +9,6 @@ const options = [
     label: "Excavations",
     address: "/excavations",
   },
-  // {
-  //   label: "Outdoor Kitchens",
-  //   address: "/outdoorKitchens",
-  // }
-
 ];
 
 const Header = () => {
@@ -40,7 +35,6 @@ const Header = () => {
             src={logo}
             alt="My logo"
           />
-
         </a>
 
         <a
@@ -68,7 +62,7 @@ const Header = () => {
         >
           <label id="labelHeader">About</label>
         </a>
-        
+
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -94,7 +88,7 @@ const Header = () => {
         >
           <label id="labelHeader">Reviews</label>
         </a>
-        
+
         <a
           onClick={() => {
             window.matchMedia("(max-width: 700px)").matches
@@ -209,7 +203,6 @@ const Header = () => {
         >
           <label id="labelHeader">Contact</label>
         </a>
-
       </div>
     );
   };
