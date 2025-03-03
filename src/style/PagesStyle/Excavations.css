@@ -1,11 +1,9 @@
 #excavations {
-  background-image: url("../../photos/Excavator\ Mountain.jpg");
-  height: 80vh;
+  /* height: 80vh; */
   background-position: center;
   background-size: cover;
   /* width: 90vh; */
   /* padding-left: 50vh; */
-  /* padding-bottom: 3vh; */
 }
 #excavations-banner {
   padding-bottom: 5vh;
@@ -20,14 +18,26 @@
   margin-bottom: 10vh;
   font-family: "Roboto", sans-serif;
 }
-
+/* Base styles */
+#MobileCarousel {
+  display: block; /* Default display for mobile */
+}
 @media (max-width: 700px) {
   #excavations {
-    height: 60vh;
+    height: auto;
   }
 
   #excavations-text-content {
     margin-left: 10vh;
     margin-right: 10vh;
+  }
+  #DesktopSlide {
+    display: none;
+  }
+}
+/* Media Query for Desktop View */
+@media (min-width: 1024px) {
+  #MobileCarousel {
+    display: none; /* Hide on desktop screens */
   }
 }

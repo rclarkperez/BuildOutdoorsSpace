@@ -1,20 +1,27 @@
 import React from "react";
 import "../../style/PagesStyle/Excavations.css";
-import Example from "../Slide";
+import DesktopSlide from "../Slide";
+import MobileCarousel from "../Carousel";
 
 const Excavations = () => {
   return (
     <div>
       <div>
-        <div id="excavations">{/* <Example /> */}</div>
-        <div className="ui">
-          <h2 id="excavations-banner" className="ui center aligned container">
-            Excavations
-          </h2>
+        <div id="excavations">
+          {/* if desktop display this */}
+          <div id="DesktopSlide">
+            <DesktopSlide id="DesktopSlide" />
+          </div>
+
+          {/* if mobile, display this: */}
+          <div id="MobileCarousel">
+            <MobileCarousel id="MobileCarousel" />
+          </div>
         </div>
       </div>
       <div className="ui" id="excavations-text-content">
-        <h2> Excavation</h2>
+        <br />
+        <br />
 
         <p className="b">
           At Build Outdoors Space Solutions LLC we specialize in work related to

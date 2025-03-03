@@ -73,7 +73,7 @@ const Header = () => {
           className="item"
           href="Excavations"
         >
-          <label id="labelHeader">Services</label>
+          <label id="labelHeader">Gallery</label>
         </a>
 
         <a
@@ -175,7 +175,7 @@ const Header = () => {
           className="item"
           href="Excavations"
         >
-          <label id="labelHeader">Services</label>
+          <label id="labelHeader">Gallery</label>
         </a>
 
         <a
