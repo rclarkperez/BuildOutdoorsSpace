@@ -8,9 +8,9 @@ import RainDrain3 from "../photos/RainDrain3.jpg";
 const imageArray = [
   { src: RetainingWall1, legend: "Retaining Wall" },
   { src: retainingWall2, legend: "Retaining Wall" },
-  { src: RainDrain1, legend: "RainDrain" },
-  { src: RainDrain2, legend: "RainDrain" },
-  { src: RainDrain3, legend: "RainDrain" },
+  { src: RainDrain1, legend: "Rain Drain" },
+  { src: RainDrain2, legend: "Rain Drain" },
+  { src: RainDrain3, legend: "Rain Drain" },
   { src: Equipment, legend: "Equipment" },
 ];
 
