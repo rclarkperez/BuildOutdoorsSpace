@@ -4,8 +4,10 @@ import retainingWall2 from "../photos/retainingWall2.jpg";
 import RainDrain1 from "../photos/RainDrain1.JPG";
 import RainDrain2 from "../photos/RainDrain2.JPG";
 import RainDrain3 from "../photos/RainDrain3.jpg";
+import BeforeAfter from "../photos/BeforeAfter.png";
 
 const imageArray = [
+  { src: BeforeAfter, legend: "Before and After" },
   { src: RetainingWall1, legend: "Retaining Wall" },
   { src: retainingWall2, legend: "Retaining Wall" },
   { src: RainDrain1, legend: "Rain Drain" },

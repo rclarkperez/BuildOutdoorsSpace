@@ -1,27 +1,32 @@
 #home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../photos/Big\ Excavator.jpg");
-  height: 82vh;
+  /* background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.youtube.com/embed/B_qiquHUOhA?autoplay=1&loop=1&mute=1&controls=0&playlist=B_qiquHUOhA"); */
+  /* background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../photos/Big\ Excavator.jpg"); */
+  height: 100vh;
   background-position: center;
   background-size: cover;
-  margin-bottom: -3vh;
+  margin-bottom: 3vh;
+  background-color: white;
 }
 #text-box {
-  padding-top: 25vh;
+  padding-top: 5vh;
 }
 #text {
-  color: white;
+  color: black;
   font-family: "Roboto", sans-serif;
   padding-top: 3vh;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 @media (max-width: 700px) {
   #home {
-    height: 60vh;
+    height: 90vh;
   }
   #text-box {
-    padding-top: 14vh;
+    padding-top: 3vh;
   }
   #text {
     padding-top: 3vh;

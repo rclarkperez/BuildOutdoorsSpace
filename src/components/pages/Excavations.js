@@ -7,6 +7,7 @@ const Excavations = () => {
   return (
     <div>
       <div>
+        <br />
         <div id="excavations">
           {/* if desktop display this */}
           <div id="DesktopSlide">
