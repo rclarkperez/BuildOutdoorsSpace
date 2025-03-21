@@ -26,8 +26,8 @@ const Excavations = () => {
 
         <p className="b">
           At Build Outdoors Space Solutions LLC we specialize in work related to
-          Excavations, Demolitions, Land Clearing, Sewer, Retaining Walls and
-          Rain Drain.
+          Excavations, Demolitions, Land Clearing, Sewer Line Repairs, Retaining
+          Walls and Rain Drain.
         </p>
         <p>
           With a keen focus on precision and safety, we ensure that your

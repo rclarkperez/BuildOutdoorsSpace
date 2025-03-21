@@ -5,8 +5,8 @@ const VideoWindow = () => (
   <div className="video-container" controls>
     <div class="overlay-content">
       <h1 id="text" className="ui center aligned container">
-        Excavations, Demolitions, Land Clearing, Sewage, Retaining Walls and
-        More!
+        Excavations, Demolitions, Land Clearing, Sewer Line Repairs, Retaining
+        Walls and More!
       </h1>
 
       <h2 id="text" className="ui center aligned container">

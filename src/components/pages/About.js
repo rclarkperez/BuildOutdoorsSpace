@@ -17,7 +17,7 @@ const About = () => {
             Build Outdoor Space Solutions specializes in excavations and serves
             clients throughout Southwest Washington and the Portland metro area.
             Specifically, our team has depth of experience in demolitions, sewer
-            repair and installation, property clearing, rain drainage and
+            line repair and installation, property clearing, rain drainage and
             retaining walls.
           </p>
 
